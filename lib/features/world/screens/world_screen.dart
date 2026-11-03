@@ -135,12 +135,6 @@ class _WorldScreenState extends State<WorldScreen> {
                                   onPressed: hours == 0 ? null : () {
                                     _controller.travel();
                                     setState(() => _showDestination = false);
-                                    final entry = _controller.journal.first;
-                                    ScaffoldMessenger.of(context)
-                                      ..hideCurrentSnackBar()
-                                      ..showSnackBar(SnackBar(
-                                        content: Text(GameStrings.arrival(entry.place, entry.hours)),
-                                      ));
                                   },
                                   child: Text(hours == 0 ? GameStrings.alreadyHere : GameStrings.travel(hours)),
                                 ),

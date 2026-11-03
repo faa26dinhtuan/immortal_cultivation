@@ -13,6 +13,10 @@ void main() {
 
     expect(find.text('Ngày 1 · 08:00'), findsOneWidget);
     expect(find.text('Đang ở Bến Hợp Lưu'), findsOneWidget);
+    expect(find.text('Đã đến Bến Hợp Lưu sau 2 giờ.'), findsNothing);
+
+    await tester.tap(find.text('Nhật ký'));
+    await tester.pumpAndSettle();
     expect(find.text('Đã đến Bến Hợp Lưu sau 2 giờ.'), findsOneWidget);
   });
 }

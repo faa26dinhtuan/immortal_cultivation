@@ -97,6 +97,10 @@ class _MapViewportState extends State<_MapViewport> {
   @override
   Widget build(BuildContext context) {
     final map = widget.map;
+    final showZoomControls = switch (Theme.of(context).platform) {
+      TargetPlatform.android || TargetPlatform.iOS => false,
+      _ => true,
+    };
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -140,38 +144,39 @@ class _MapViewportState extends State<_MapViewport> {
             ),
           ),
         ),
-        Align(
-          alignment: Alignment.centerRight,
-          child: SafeArea(
-            minimum: const EdgeInsets.all(12),
-            child: Material(
-              color: GameTheme.paper,
-              borderRadius: BorderRadius.circular(16),
-              elevation: 2,
-              child: ValueListenableBuilder<Matrix4>(
-                valueListenable: _transform,
-                builder: (context, matrix, child) {
-                  final scale = matrix.getMaxScaleOnAxis();
-                  return Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      IconButton(
-                        tooltip: GameStrings.zoomIn,
-                        onPressed: scale < _maxScale - .001 ? () => _zoom(_zoomStep) : null,
-                        icon: const Icon(Icons.add),
-                      ),
-                      IconButton(
-                        tooltip: GameStrings.zoomOut,
-                        onPressed: scale > 1.001 ? () => _zoom(1 / _zoomStep) : null,
-                        icon: const Icon(Icons.remove),
-                      ),
-                    ],
-                  );
-                },
+        if (showZoomControls)
+          Align(
+            alignment: Alignment.centerRight,
+            child: SafeArea(
+              minimum: const EdgeInsets.all(12),
+              child: Material(
+                color: GameTheme.paper,
+                borderRadius: BorderRadius.circular(16),
+                elevation: 2,
+                child: ValueListenableBuilder<Matrix4>(
+                  valueListenable: _transform,
+                  builder: (context, matrix, child) {
+                    final scale = matrix.getMaxScaleOnAxis();
+                    return Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        IconButton(
+                          tooltip: GameStrings.zoomIn,
+                          onPressed: scale < _maxScale - .001 ? () => _zoom(_zoomStep) : null,
+                          icon: const Icon(Icons.add),
+                        ),
+                        IconButton(
+                          tooltip: GameStrings.zoomOut,
+                          onPressed: scale > 1.001 ? () => _zoom(1 / _zoomStep) : null,
+                          icon: const Icon(Icons.remove),
+                        ),
+                      ],
+                    );
+                  },
+                ),
               ),
             ),
           ),
-        ),
       ],
     );
   }
