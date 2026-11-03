@@ -70,25 +70,40 @@ class _PlacePin extends StatelessWidget {
         : GameStrings.placeName(place);
     return Semantics(
       selected: selected,
-      child: IconButton(
-        tooltip: label,
-        onPressed: onPressed,
-        style: IconButton.styleFrom(
-          fixedSize: const Size.square(GameTheme.pinSize),
-          foregroundColor: GameTheme.cream,
-          backgroundColor: selected ? GameTheme.clay : GameTheme.pine,
-          side: BorderSide(color: GameTheme.cream, width: current ? 3 : 1.5),
-        ),
-        icon: switch (place) {
-          WorldPlace.cave => Image.asset(
-            'assets/icons/starter/cave.png',
-            width: 25,
-            height: 25,
-            excludeFromSemantics: true,
+      child: SizedBox.square(
+        dimension: GameTheme.pinSize,
+        child: IconButton(
+          tooltip: label,
+          onPressed: onPressed,
+          padding: EdgeInsets.zero,
+          iconSize: GameTheme.pinIconSize,
+          color: GameTheme.cream,
+          icon: DecoratedBox(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: selected ? GameTheme.clay : GameTheme.pine,
+              border: Border.all(
+                color: GameTheme.cream,
+                width: current ? 2 : 1,
+              ),
+            ),
+            child: SizedBox.square(
+              dimension: GameTheme.pinBadgeSize,
+              child: Center(
+                child: switch (place) {
+                  WorldPlace.cave => Image.asset(
+                    'assets/icons/starter/cave.png',
+                    width: GameTheme.pinIconSize,
+                    height: GameTheme.pinIconSize,
+                    excludeFromSemantics: true,
+                  ),
+                  WorldPlace.landing => const Icon(Icons.sailing),
+                  WorldPlace.pass => const Icon(Icons.terrain),
+                },
+              ),
+            ),
           ),
-          WorldPlace.landing => const Icon(Icons.sailing),
-          WorldPlace.pass => const Icon(Icons.terrain),
-        },
+        ),
       ),
     );
   }

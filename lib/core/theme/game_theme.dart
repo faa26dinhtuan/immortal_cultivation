@@ -7,6 +7,8 @@ abstract final class GameTheme {
   static const clay = Color(0xff874332);
   static const cream = Color(0xfffff2c9);
   static const pinSize = 48.0;
+  static const pinBadgeSize = 24.0;
+  static const pinIconSize = 16.0;
   static const contentWidth = 740.0;
   static const gutter = 20.0;
 
