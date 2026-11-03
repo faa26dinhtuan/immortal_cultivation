@@ -13,7 +13,7 @@ abstract final class GameStrings {
   static const mapDescription = 'Thung lũng nhìn từ trên cao, với sông, rừng và núi';
   static const alreadyHere = 'Đang ở đây';
   static const journal = 'Nhật ký';
-  static const emptyJournal = 'Chưa có hành trình nào.';
+  static const emptyJournal = 'Nhật ký còn trống.';
   static const closeDestination = 'Đóng thông tin địa điểm';
   static const zoomIn = 'Phóng to bản đồ';
   static const zoomOut = 'Thu nhỏ bản đồ';
@@ -56,7 +56,7 @@ abstract final class GameStrings {
       '${floodAction(choice)} · +${choice.extraHours} giờ\n'
       'Đạo Niệm ${daoNiemName(choice.daoNiem)}';
 
-  static String travelLogDetail(TravelEntry entry) {
+  static String journalDetail(JournalEntry entry) {
     final time = clock(entry.day, entry.hour);
     final choice = entry.floodChoice;
     if (choice == null) return time;
@@ -98,4 +98,24 @@ abstract final class GameStrings {
     DaoNiem.adaptability =>
       'Nhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá.',
   };
+
+  static const inventory = 'Túi đồ';
+  static const emptyInventory = 'Túi đồ còn trống.';
+  static const herbUse = 'Dùng khi bế quan tại Động Phủ để tăng thêm tu vi.';
+
+  static String herbCount(int count) => 'Linh thảo × $count';
+  static String harvestAction(int hours) => 'Hái linh thảo · $hours giờ';
+
+  static String journalTitle(JournalEntry entry) => switch (entry.kind) {
+    JournalKind.travel => arrival(entry.place, entry.hours),
+    JournalKind.harvest =>
+      'Hái linh thảo tại ${placeName(entry.place)} · ${entry.hours} giờ',
+  };
+
+  static String herbalRetreat(int herbs) {
+    final hours = CultivationState.retreatHours;
+    final gain = CultivationState.retreatGain + CultivationState.herbBonus;
+    return 'Bế quan với 1 linh thảo · $hours giờ · +$gain tu vi\n'
+        'Đang có $herbs linh thảo';
+  }
 }

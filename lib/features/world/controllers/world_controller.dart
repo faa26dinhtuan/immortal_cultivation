@@ -15,7 +15,12 @@ enum FloodChoice {
   final DaoNiem daoNiem;
 }
 
+enum JournalKind { travel, harvest }
+
 class WorldController extends ChangeNotifier {
+  static const harvestHours = 1;
+  static const harvestYield = 1;
+
   WorldController({
     Map<String, dynamic>? snapshot,
     GameSaveRepository? repository,
@@ -29,6 +34,7 @@ class WorldController extends ChangeNotifier {
               insights: (snapshot['insights'] as List<dynamic>)
                   .map((name) => DaoNiem.values.byName(name as String)),
             ),
+      _herbs = (snapshot?['herbs'] as int?) ?? 0,
       _current = _savedPlace(snapshot),
       _selected = _savedPlace(snapshot),
       _journal = snapshot == null
@@ -41,7 +47,8 @@ class WorldController extends ChangeNotifier {
   final CultivationState cultivation;
   WorldPlace _current;
   WorldPlace _selected;
-  final List<TravelEntry> _journal;
+  final List<JournalEntry> _journal;
+  int _herbs;
   bool _floodPending = false;
   bool _floodResolved;
   bool _disposed = false;
@@ -61,10 +68,12 @@ class WorldController extends ChangeNotifier {
           ? WorldPlace.cave
           : WorldPlace.values.byName(snapshot['current'] as String);
 
-  static TravelEntry _readEntry(dynamic value) {
+  static JournalEntry _readEntry(dynamic value) {
     final entry = value as Map<String, dynamic>;
     final choice = entry['floodChoice'] as String?;
+    final kind = entry['kind'] as String?;
     return (
+      kind: kind == null ? JournalKind.travel : JournalKind.values.byName(kind),
       place: WorldPlace.values.byName(entry['place'] as String),
       hours: entry['hours'] as int,
       day: entry['day'] as int,
@@ -88,11 +97,13 @@ class WorldController extends ChangeNotifier {
       'elapsedHours': _clock.elapsedHours,
       'realm': cultivation.realm.name,
       'progress': cultivation.progress,
+      'herbs': _herbs,
       'insights': cultivation.insights.map((insight) => insight.name).toList(),
       'floodResolved': _floodResolved,
       'journal': [
         for (final entry in _journal)
           {
+            'kind': entry.kind.name,
             'place': entry.place.name,
             'hours': entry.hours,
             'day': entry.day,
@@ -118,7 +129,7 @@ class WorldController extends ChangeNotifier {
   WorldPlace get selected => _selected;
   int get day => _clock.day;
   int get hour => _clock.hour;
-  Iterable<TravelEntry> get journal => _journal.reversed;
+  Iterable<JournalEntry> get journal => _journal.reversed;
 
   List<WorldTrail> get route {
     final start = _current.index;
@@ -132,9 +143,30 @@ class WorldController extends ChangeNotifier {
 
   bool get canCultivate => _current == WorldPlace.cave && !_floodPending;
 
-  void retreat() {
+  int get herbs => _herbs;
+
+  bool get canHarvest => _current == WorldPlace.landing && !_floodPending;
+
+  void harvest() {
+    if (!canHarvest) return;
+    _herbs += harvestYield;
+    _clock.advanceHours(harvestHours);
+    _journal.add((
+      kind: JournalKind.harvest,
+      place: _current,
+      hours: harvestHours,
+      day: day,
+      hour: hour,
+      floodChoice: null,
+    ));
+    _commit();
+  }
+
+  void retreat({bool useHerb = false}) {
     if (!canCultivate) return;
-    cultivation.retreat();
+    if (useHerb && _herbs == 0) return;
+    if (useHerb) _herbs--;
+    cultivation.retreat(useHerb: useHerb);
     _clock.advanceHours(CultivationState.retreatHours);
     _commit();
   }
@@ -179,6 +211,7 @@ class WorldController extends ChangeNotifier {
     _clock.advanceHours(hours);
     _current = _selected;
     _journal.add((
+      kind: JournalKind.travel,
       place: _current,
       hours: hours,
       day: day,
@@ -189,7 +222,8 @@ class WorldController extends ChangeNotifier {
   }
 }
 
-typedef TravelEntry = ({
+typedef JournalEntry = ({
+  JournalKind kind,
   WorldPlace place,
   int hours,
   int day,

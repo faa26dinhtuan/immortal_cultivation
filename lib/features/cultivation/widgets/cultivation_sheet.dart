@@ -43,6 +43,15 @@ class CultivationSheet extends StatelessWidget {
                     CultivationState.retreatGain,
                   )),
                 ),
+                OutlinedButton(
+                  onPressed: controller.herbs > 0
+                      ? () => controller.retreat(useHerb: true)
+                      : null,
+                  child: Text(
+                    GameStrings.herbalRetreat(controller.herbs),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
                 const SizedBox(height: 16),
                 if (cultivation.hasNextRealm) ...[
                   Text(GameStrings.breakthrough, style: typography.titleMedium),

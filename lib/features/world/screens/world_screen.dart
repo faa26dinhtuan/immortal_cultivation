@@ -4,6 +4,7 @@ import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
 import '../../character/widgets/character_sheet.dart';
 import '../../cultivation/widgets/cultivation_sheet.dart';
+import '../../inventory/widgets/inventory_sheet.dart';
 import '../controllers/world_controller.dart';
 import '../widgets/flood_event_dialog.dart';
 import '../widgets/regional_map.dart';
@@ -64,6 +65,15 @@ class _WorldScreenState extends State<WorldScreen> {
     );
   }
 
+  void _openInventory() {
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      useSafeArea: true,
+      builder: (context) => InventorySheet(herbs: _controller.herbs),
+    );
+  }
+
   void _openJournal() {
     final entries = _controller.journal.toList(growable: false);
     showModalBottomSheet<void>(
@@ -82,8 +92,8 @@ class _WorldScreenState extends State<WorldScreen> {
             for (final entry in entries)
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                title: Text(GameStrings.arrival(entry.place, entry.hours)),
-                subtitle: Text(GameStrings.travelLogDetail(entry)),
+                title: Text(GameStrings.journalTitle(entry)),
+                subtitle: Text(GameStrings.journalDetail(entry)),
               ),
           ],
         ),
@@ -173,10 +183,25 @@ class _WorldScreenState extends State<WorldScreen> {
                                 ),
                                 Text(GameStrings.placeDescription(_controller.selected)),
                                 const SizedBox(height: 8),
-                                FilledButton(
-                                  onPressed: hours == 0 ? null : _travel,
-                                  child: Text(hours == 0 ? GameStrings.alreadyHere : GameStrings.travel(hours)),
-                                ),
+                                if (_controller.canHarvest &&
+                                    _controller.selected == _controller.current) ...[
+                                  Text(GameStrings.herbCount(_controller.herbs)),
+                                  const SizedBox(height: 8),
+                                  FilledButton(
+                                    onPressed: _controller.harvest,
+                                    child: Text(GameStrings.harvestAction(
+                                      WorldController.harvestHours,
+                                    )),
+                                  ),
+                                ] else
+                                  FilledButton(
+                                    onPressed: hours == 0 ? null : _travel,
+                                    child: Text(
+                                      hours == 0
+                                          ? GameStrings.alreadyHere
+                                          : GameStrings.travel(hours),
+                                    ),
+                                  ),
                               ],
                             ),
                           ),
@@ -218,6 +243,16 @@ class _WorldScreenState extends State<WorldScreen> {
                                 excludeFromSemantics: true,
                               ),
                               label: const Text(GameStrings.cultivation),
+                            ),
+                            FilledButton.tonalIcon(
+                              onPressed: _openInventory,
+                              icon: Image.asset(
+                                InventorySheet.bagIcon,
+                                width: 24,
+                                height: 24,
+                                excludeFromSemantics: true,
+                              ),
+                              label: const Text(GameStrings.inventory),
                             ),
                             FilledButton.tonalIcon(
                               onPressed: _openJournal,

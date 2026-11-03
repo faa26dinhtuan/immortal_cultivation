@@ -5,6 +5,7 @@ enum CultivationRealm { mortal, qiRefining }
 class CultivationState {
   static const retreatHours = 2;
   static const retreatGain = 4;
+  static const herbBonus = 2;
   static const adaptabilityBonus = 6;
 
   CultivationState({
@@ -34,7 +35,9 @@ class CultivationState {
 
   void gainInsight(DaoNiem insight) => _insights.add(insight);
 
-  void retreat() => _progress += retreatGain;
+  void retreat({bool useHerb = false}) {
+    _progress += retreatGain + (useHerb ? herbBonus : 0);
+  }
 
   bool breakThrough(DaoNiem? insight) {
     if (!canBreakThrough(insight)) return false;
