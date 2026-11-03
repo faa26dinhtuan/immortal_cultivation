@@ -90,16 +90,16 @@ class _PlacePin extends StatelessWidget {
             child: SizedBox.square(
               dimension: GameTheme.pinBadgeSize,
               child: Center(
-                child: switch (place) {
-                  WorldPlace.cave => Image.asset(
-                    'assets/icons/starter/cave.png',
-                    width: GameTheme.pinIconSize,
-                    height: GameTheme.pinIconSize,
-                    excludeFromSemantics: true,
-                  ),
-                  WorldPlace.landing => const Icon(Icons.sailing),
-                  WorldPlace.pass => const Icon(Icons.terrain),
-                },
+                child: Image.asset(
+                  switch (place) {
+                    WorldPlace.cave => 'assets/icons/map_pins/cave.png',
+                    WorldPlace.landing => 'assets/icons/map_pins/river_landing.png',
+                    WorldPlace.pass => 'assets/icons/map_pins/mountain_pass.png',
+                  },
+                  width: GameTheme.pinIconSize,
+                  height: GameTheme.pinIconSize,
+                  excludeFromSemantics: true,
+                ),
               ),
             ),
           ),
