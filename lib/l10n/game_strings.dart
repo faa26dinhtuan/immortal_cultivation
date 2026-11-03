@@ -108,14 +108,21 @@ abstract final class GameStrings {
 
   static String journalTitle(JournalEntry entry) => switch (entry.kind) {
     JournalKind.travel => arrival(entry.place, entry.hours),
+    JournalKind.manual => learnedManual,
     JournalKind.harvest =>
       'Hái linh thảo tại ${placeName(entry.place)} · ${entry.hours} giờ',
   };
 
-  static String herbalRetreat(int herbs) {
+  static String herbalRetreat(int herbs, int gain) {
     final hours = CultivationState.retreatHours;
-    final gain = CultivationState.retreatGain + CultivationState.herbBonus;
     return 'Bế quan với 1 linh thảo · $hours giờ · +$gain tu vi\n'
         'Đang có $herbs linh thảo';
   }
+
+  static const characterManual = 'Công pháp';
+  static const manualName = 'Thanh Khê Dưỡng Khí Quyết';
+  static const learnedManual = 'Đã học Thanh Khê Dưỡng Khí Quyết';
+
+  static String surveyPass(int hours) => 'Khảo sát đèo · $hours giờ';
+  static String manualEffect(int bonus) => '+$bonus tu vi mỗi lượt bế quan.';
 }

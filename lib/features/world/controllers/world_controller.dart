@@ -15,10 +15,11 @@ enum FloodChoice {
   final DaoNiem daoNiem;
 }
 
-enum JournalKind { travel, harvest }
+enum JournalKind { travel, harvest, manual }
 
 class WorldController extends ChangeNotifier {
   static const harvestHours = 1;
+  static const surveyHours = 3;
   static const harvestYield = 1;
 
   WorldController({
@@ -31,6 +32,7 @@ class WorldController extends ChangeNotifier {
           : CultivationState(
               realm: CultivationRealm.values.byName(snapshot['realm'] as String),
               progress: snapshot['progress'] as int,
+              knowsManual: (snapshot['knowsManual'] as bool?) ?? false,
               insights: (snapshot['insights'] as List<dynamic>)
                   .map((name) => DaoNiem.values.byName(name as String)),
             ),
@@ -97,6 +99,7 @@ class WorldController extends ChangeNotifier {
       'elapsedHours': _clock.elapsedHours,
       'realm': cultivation.realm.name,
       'progress': cultivation.progress,
+      'knowsManual': cultivation.knowsManual,
       'herbs': _herbs,
       'insights': cultivation.insights.map((insight) => insight.name).toList(),
       'floodResolved': _floodResolved,
@@ -155,6 +158,24 @@ class WorldController extends ChangeNotifier {
       kind: JournalKind.harvest,
       place: _current,
       hours: harvestHours,
+      day: day,
+      hour: hour,
+      floodChoice: null,
+    ));
+    _commit();
+  }
+
+  bool get canSurveyPass =>
+      _current == WorldPlace.pass && !_floodPending && !cultivation.knowsManual;
+
+  void surveyPass() {
+    if (!canSurveyPass) return;
+    cultivation.learnManual();
+    _clock.advanceHours(surveyHours);
+    _journal.add((
+      kind: JournalKind.manual,
+      place: _current,
+      hours: surveyHours,
       day: day,
       hour: hour,
       floodChoice: null,

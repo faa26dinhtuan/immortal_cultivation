@@ -51,6 +51,7 @@ class _WorldScreenState extends State<WorldScreen> {
       builder: (context) => CharacterSheet(
         realm: cultivation.realm,
         progress: cultivation.progress,
+        knowsManual: cultivation.knowsManual,
         insights: cultivation.insights.toList(growable: false),
       ),
     );
@@ -193,7 +194,13 @@ class _WorldScreenState extends State<WorldScreen> {
                                       WorldController.harvestHours,
                                     )),
                                   ),
-                                ] else
+                                ] else if (_controller.canSurveyPass &&
+                                    _controller.selected == _controller.current)
+                                  FilledButton(
+                                    onPressed: _controller.surveyPass,
+                                    child: Text(GameStrings.surveyPass(WorldController.surveyHours)),
+                                  )
+                                else
                                   FilledButton(
                                     onPressed: hours == 0 ? null : _travel,
                                     child: Text(

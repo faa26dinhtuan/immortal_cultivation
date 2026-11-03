@@ -8,6 +8,7 @@ class CharacterSheet extends StatelessWidget {
   const CharacterSheet({
     required this.realm,
     required this.progress,
+    required this.knowsManual,
     required this.insights,
     super.key,
   });
@@ -16,6 +17,7 @@ class CharacterSheet extends StatelessWidget {
 
   final CultivationRealm realm;
   final int progress;
+  final bool knowsManual;
   final List<DaoNiem> insights;
 
   @override
@@ -56,6 +58,21 @@ class CharacterSheet extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 24),
+          if (knowsManual) ...[
+            Text(GameStrings.characterManual, style: typography.titleMedium),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: Image.asset(
+                'assets/icons/items/manual.png',
+                width: 40,
+                height: 40,
+                excludeFromSemantics: true,
+              ),
+              title: const Text(GameStrings.manualName),
+              subtitle: Text(GameStrings.manualEffect(CultivationState.manualBonus)),
+            ),
+            const SizedBox(height: 16),
+          ],
           Text(GameStrings.characterInsights, style: typography.titleMedium),
           if (insights.isEmpty)
             const Padding(

@@ -40,7 +40,7 @@ class CultivationSheet extends StatelessWidget {
                   onPressed: controller.retreat,
                   child: Text(GameStrings.retreatAction(
                     CultivationState.retreatHours,
-                    CultivationState.retreatGain,
+                    cultivation.retreatProgress(),
                   )),
                 ),
                 OutlinedButton(
@@ -48,7 +48,10 @@ class CultivationSheet extends StatelessWidget {
                       ? () => controller.retreat(useHerb: true)
                       : null,
                   child: Text(
-                    GameStrings.herbalRetreat(controller.herbs),
+                    GameStrings.herbalRetreat(
+                      controller.herbs,
+                      cultivation.retreatProgress(useHerb: true),
+                    ),
                     textAlign: TextAlign.center,
                   ),
                 ),
