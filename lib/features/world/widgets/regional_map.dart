@@ -20,32 +20,159 @@ class RegionalMap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 1672 / 941,
-      child: LayoutBuilder(
-        builder: (context, constraints) => Stack(
-          fit: StackFit.expand,
-          children: [
-            Image.asset(
-              'assets/images/map/regional_map.png',
-              fit: BoxFit.contain,
-              semanticLabel: GameStrings.mapDescription,
-            ),
-            IgnorePointer(child: CustomPaint(painter: _RoutePainter(route))),
-            for (final place in WorldPlace.values)
-              Positioned(
-                left: place.position.dx * constraints.maxWidth - GameTheme.pinSize / 2,
-                top: place.position.dy * constraints.maxHeight - GameTheme.pinSize / 2,
-                child: _PlacePin(
-                  place: place,
-                  current: current == place,
-                  selected: selected == place,
-                  onPressed: () => onSelect(place),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final viewport = constraints.biggest;
+        return _MapViewport(
+          key: ValueKey(viewport),
+          viewport: viewport,
+          map: this,
+        );
+      },
+    );
+  }
+}
+
+class _MapViewport extends StatefulWidget {
+  const _MapViewport({
+    required this.viewport,
+    required this.map,
+    super.key,
+  });
+
+  final Size viewport;
+  final RegionalMap map;
+
+  @override
+  State<_MapViewport> createState() => _MapViewportState();
+}
+
+class _MapViewportState extends State<_MapViewport> {
+  static const _aspectRatio = 1672 / 941;
+  static const _maxScale = 3.0;
+  static const _zoomStep = 1.35;
+
+  late final Size _scene;
+  late final TransformationController _transform;
+
+  @override
+  void initState() {
+    super.initState();
+    final viewport = widget.viewport;
+    _scene = viewport.width / viewport.height > _aspectRatio
+        ? Size(viewport.width, viewport.width / _aspectRatio)
+        : Size(viewport.height * _aspectRatio, viewport.height);
+    final position = widget.map.current.position;
+    _transform = TransformationController(
+      _matrix(1, Offset(position.dx * _scene.width, position.dy * _scene.height)),
+    );
+  }
+
+  @override
+  void dispose() {
+    _transform.dispose();
+    super.dispose();
+  }
+
+  Matrix4 _matrix(double scale, Offset focalPoint) {
+    final viewport = widget.viewport;
+    final x = (viewport.width / 2 - focalPoint.dx * scale)
+        .clamp((viewport.width - _scene.width * scale).clamp(double.negativeInfinity, 0.0), 0.0)
+        .toDouble();
+    final y = (viewport.height / 2 - focalPoint.dy * scale)
+        .clamp((viewport.height - _scene.height * scale).clamp(double.negativeInfinity, 0.0), 0.0)
+        .toDouble();
+    return Matrix4.diagonal3Values(scale, scale, 1)
+      ..setEntry(0, 3, x)
+      ..setEntry(1, 3, y);
+  }
+
+  void _zoom(double multiplier) {
+    final currentScale = _transform.value.getMaxScaleOnAxis();
+    final scale = (currentScale * multiplier).clamp(1.0, _maxScale).toDouble();
+    final center = widget.viewport.center(Offset.zero);
+    _transform.value = _matrix(scale, _transform.toScene(center));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final map = widget.map;
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        InteractiveViewer(
+          transformationController: _transform,
+          constrained: false,
+          alignment: Alignment.topLeft,
+          minScale: 1,
+          maxScale: _maxScale,
+          child: SizedBox(
+            width: _scene.width,
+            height: _scene.height,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                Image.asset(
+                  'assets/images/map/regional_map.png',
+                  fit: BoxFit.cover,
+                  semanticLabel: GameStrings.mapDescription,
                 ),
-              ),
-          ],
+                IgnorePointer(child: CustomPaint(painter: _RoutePainter(map.route))),
+                for (final place in WorldPlace.values)
+                  Positioned(
+                    left: place.position.dx * _scene.width - GameTheme.pinSize / 2,
+                    top: place.position.dy * _scene.height - GameTheme.pinSize / 2,
+                    child: ValueListenableBuilder<Matrix4>(
+                      valueListenable: _transform,
+                      builder: (context, matrix, child) => Transform.scale(
+                        scale: 1 / matrix.getMaxScaleOnAxis(),
+                        child: child,
+                      ),
+                      child: _PlacePin(
+                        place: place,
+                        current: map.current == place,
+                        selected: map.selected == place,
+                        onPressed: () => map.onSelect(place),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
         ),
-      ),
+        Align(
+          alignment: Alignment.centerRight,
+          child: SafeArea(
+            minimum: const EdgeInsets.all(12),
+            child: Material(
+              color: GameTheme.paper,
+              borderRadius: BorderRadius.circular(16),
+              elevation: 2,
+              child: ValueListenableBuilder<Matrix4>(
+                valueListenable: _transform,
+                builder: (context, matrix, child) {
+                  final scale = matrix.getMaxScaleOnAxis();
+                  return Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        tooltip: GameStrings.zoomIn,
+                        onPressed: scale < _maxScale - .001 ? () => _zoom(_zoomStep) : null,
+                        icon: const Icon(Icons.add),
+                      ),
+                      IconButton(
+                        tooltip: GameStrings.zoomOut,
+                        onPressed: scale > 1.001 ? () => _zoom(1 / _zoomStep) : null,
+                        icon: const Icon(Icons.remove),
+                      ),
+                    ],
+                  );
+                },
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

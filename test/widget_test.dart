@@ -6,6 +6,8 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     expect(find.text('Ngày 1 · 06:00'), findsOneWidget);
+    await tester.tap(find.byTooltip('Bến Hợp Lưu'));
+    await tester.pump();
     await tester.tap(find.text('Di chuyển · 2 giờ'));
     await tester.pump();
 

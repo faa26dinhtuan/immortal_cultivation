@@ -6,14 +6,14 @@ import '../world_region.dart';
 class WorldController extends ChangeNotifier {
   final _clock = GameClock();
   WorldPlace _current = WorldPlace.cave;
-  WorldPlace _selected = WorldPlace.landing;
-  int? _lastTravelHours;
+  WorldPlace _selected = WorldPlace.cave;
+  final _journal = <TravelEntry>[];
 
   WorldPlace get current => _current;
   WorldPlace get selected => _selected;
   int get day => _clock.day;
   int get hour => _clock.hour;
-  int? get lastTravelHours => _lastTravelHours;
+  Iterable<TravelEntry> get journal => _journal.reversed;
 
   List<WorldTrail> get route {
     final start = _current.index;
@@ -27,7 +27,6 @@ class WorldController extends ChangeNotifier {
 
   void select(WorldPlace place) {
     _selected = place;
-    _lastTravelHours = null;
     notifyListeners();
   }
 
@@ -37,7 +36,9 @@ class WorldController extends ChangeNotifier {
 
     _clock.advanceHours(hours);
     _current = _selected;
-    _lastTravelHours = hours;
+    _journal.add((place: _current, hours: hours, day: day, hour: hour));
     notifyListeners();
   }
 }
+
+typedef TravelEntry = ({WorldPlace place, int hours, int day, int hour});

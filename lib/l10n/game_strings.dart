@@ -6,6 +6,11 @@ abstract final class GameStrings {
   static const regionName = 'Thanh Khê';
   static const mapDescription = 'Thung lũng nhìn từ trên cao, với sông, rừng và núi';
   static const alreadyHere = 'Đang ở đây';
+  static const journal = 'Nhật ký';
+  static const emptyJournal = 'Chưa có hành trình nào.';
+  static const closeDestination = 'Đóng thông tin địa điểm';
+  static const zoomIn = 'Phóng to bản đồ';
+  static const zoomOut = 'Thu nhỏ bản đồ';
 
   static String placeName(WorldPlace place) => switch (place) {
     WorldPlace.cave => 'Động Phủ',
