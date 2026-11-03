@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/game_theme.dart';
@@ -144,7 +145,7 @@ class _MapViewportState extends State<_MapViewport> {
             ),
           ),
         ),
-        if (showZoomControls)
+        if (!kIsWeb && showZoomControls)
           Align(
             alignment: Alignment.centerRight,
             child: SafeArea(

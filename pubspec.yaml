@@ -66,6 +66,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/map/regional_map.png
+    - assets/images/events/flooded_ford.png
     - assets/icons/map_pins/cave.png
     - assets/icons/map_pins/river_landing.png
     - assets/icons/map_pins/mountain_pass.png

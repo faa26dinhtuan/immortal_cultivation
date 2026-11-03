@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
 import '../controllers/world_controller.dart';
+import '../widgets/flood_event_dialog.dart';
 import '../widgets/regional_map.dart';
 
 class WorldScreen extends StatefulWidget {
@@ -20,6 +21,20 @@ class _WorldScreenState extends State<WorldScreen> {
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  Future<void> _travel() async {
+    if (_controller.beginTravel()) {
+      final choice = await showDialog<FloodChoice>(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => const FloodEventDialog(),
+      );
+      if (!mounted) return;
+      _controller.resolveFlood(choice);
+      if (choice == null) return;
+    }
+    setState(() => _showDestination = false);
   }
 
   void _openJournal() {
@@ -41,7 +56,7 @@ class _WorldScreenState extends State<WorldScreen> {
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 title: Text(GameStrings.arrival(entry.place, entry.hours)),
-                subtitle: Text(GameStrings.clock(entry.day, entry.hour)),
+                subtitle: Text(GameStrings.travelLogDetail(entry)),
               ),
           ],
         ),
@@ -132,10 +147,7 @@ class _WorldScreenState extends State<WorldScreen> {
                                 Text(GameStrings.placeDescription(_controller.selected)),
                                 const SizedBox(height: 8),
                                 FilledButton(
-                                  onPressed: hours == 0 ? null : () {
-                                    _controller.travel();
-                                    setState(() => _showDestination = false);
-                                  },
+                                  onPressed: hours == 0 ? null : _travel,
                                   child: Text(hours == 0 ? GameStrings.alreadyHere : GameStrings.travel(hours)),
                                 ),
                               ],
