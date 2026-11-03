@@ -46,3 +46,12 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Local workflow, art previews, and handoff archives
+/README.md
+/AGENTS.md
+/readmeme.txt
+/FOLDER_STRUCTURE.md
+/create_structure.ps1
+/art_previews/
+/*.zip
