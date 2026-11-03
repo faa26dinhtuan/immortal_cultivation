@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
+import '../../cultivation/widgets/cultivation_sheet.dart';
 import '../controllers/world_controller.dart';
 import '../widgets/flood_event_dialog.dart';
 import '../widgets/regional_map.dart';
@@ -35,6 +36,15 @@ class _WorldScreenState extends State<WorldScreen> {
       if (choice == null) return;
     }
     setState(() => _showDestination = false);
+  }
+
+  void _openCultivation() {
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      useSafeArea: true,
+      builder: (context) => CultivationSheet(controller: _controller),
+    );
   }
 
   void _openJournal() {
@@ -154,12 +164,27 @@ class _WorldScreenState extends State<WorldScreen> {
                             ),
                           ),
                         const SizedBox(height: 8),
-                        Align(
-                          child: FilledButton.tonalIcon(
-                            onPressed: _openJournal,
-                            icon: const Icon(Icons.menu_book_outlined),
-                            label: const Text(GameStrings.journal),
-                          ),
+                        Wrap(
+                          alignment: WrapAlignment.center,
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            FilledButton.tonalIcon(
+                              onPressed: _openCultivation,
+                              icon: Image.asset(
+                                'assets/icons/ui/meditation.png',
+                                width: 24,
+                                height: 24,
+                                excludeFromSemantics: true,
+                              ),
+                              label: const Text(GameStrings.cultivation),
+                            ),
+                            FilledButton.tonalIcon(
+                              onPressed: _openJournal,
+                              icon: const Icon(Icons.menu_book_outlined),
+                              label: const Text(GameStrings.journal),
+                            ),
+                          ],
                         ),
                       ],
                     ),

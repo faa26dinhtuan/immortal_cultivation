@@ -1,9 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 import '../../../core/services/game_clock.dart';
+import '../../cultivation/cultivation_state.dart';
 import '../world_region.dart';
-
-enum DaoNiem { patience, adaptability }
 
 enum FloodChoice {
   wait(2, DaoNiem.patience),
@@ -17,6 +16,7 @@ enum FloodChoice {
 
 class WorldController extends ChangeNotifier {
   final _clock = GameClock();
+  final cultivation = CultivationState();
   WorldPlace _current = WorldPlace.cave;
   WorldPlace _selected = WorldPlace.cave;
   final _journal = <TravelEntry>[];
@@ -38,6 +38,20 @@ class WorldController extends ChangeNotifier {
   }
 
   int get travelHours => route.fold(0, (sum, trail) => sum + trail.hours);
+
+  bool get canCultivate => _current == WorldPlace.cave && !_floodPending;
+
+  void retreat() {
+    if (!canCultivate) return;
+    cultivation.retreat();
+    _clock.advanceHours(CultivationState.retreatHours);
+    notifyListeners();
+  }
+
+  void breakThrough(DaoNiem? insight) {
+    if (!canCultivate || !cultivation.breakThrough(insight)) return;
+    notifyListeners();
+  }
 
   void select(WorldPlace place) {
     if (_floodPending) return;
@@ -65,6 +79,7 @@ class WorldController extends ChangeNotifier {
     if (choice == null) return;
 
     _floodResolved = true;
+    cultivation.gainInsight(choice.daoNiem);
     _finishTravel(choice);
   }
 

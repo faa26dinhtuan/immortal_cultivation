@@ -70,6 +70,7 @@ flutter:
     - assets/icons/map_pins/cave.png
     - assets/icons/map_pins/river_landing.png
     - assets/icons/map_pins/mountain_pass.png
+    - assets/icons/ui/meditation.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

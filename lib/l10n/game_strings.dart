@@ -1,3 +1,4 @@
+import '../features/cultivation/cultivation_state.dart';
 import '../features/world/controllers/world_controller.dart';
 import '../features/world/world_region.dart';
 
@@ -59,4 +60,28 @@ abstract final class GameStrings {
     return '$time\n$floodTitle · ${floodAction(choice)}\n'
         'Nhận Đạo Niệm ${daoNiemName(choice.daoNiem)}';
   }
+
+  static const cultivation = 'Bế quan';
+  static const cultivationAtCave = 'Trở về Động Phủ để bế quan và đột phá.';
+  static const breakthrough = 'Đột phá';
+  static const firstBreakthroughComplete = 'Đã đột phá lên Luyện Khí.';
+  static const noInsight = 'Chưa có Đạo Niệm';
+
+  static String realmName(CultivationRealm realm) => switch (realm) {
+    CultivationRealm.mortal => 'Phàm Nhân',
+    CultivationRealm.qiRefining => 'Luyện Khí',
+  };
+
+  static String cultivationProgress(int progress) => 'Tu vi · $progress';
+  static String retreatAction(int hours, int gain) => 'Bế quan $hours giờ · +$gain tu vi';
+
+  static String ownedInsights(Iterable<DaoNiem> insights) => insights.isEmpty
+      ? noInsight
+      : 'Đạo Niệm · ${insights.map(daoNiemName).join(', ')}';
+
+  static String breakthroughOption(DaoNiem? insight, int cost) => switch (insight) {
+    null => 'Đột phá thường · $cost tu vi',
+    DaoNiem.patience => 'Nhẫn Nại · $cost tu vi',
+    DaoNiem.adaptability => 'Ứng Biến · $cost tu vi\nNhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá',
+  };
 }
