@@ -8,14 +8,16 @@ import '../widgets/flood_event_dialog.dart';
 import '../widgets/regional_map.dart';
 
 class WorldScreen extends StatefulWidget {
-  const WorldScreen({super.key});
+  const WorldScreen({this.controller, super.key});
+
+  final WorldController? controller;
 
   @override
   State<WorldScreen> createState() => _WorldScreenState();
 }
 
 class _WorldScreenState extends State<WorldScreen> {
-  final _controller = WorldController();
+  late final _controller = widget.controller ?? WorldController();
   bool _showDestination = false;
 
   @override
@@ -159,6 +161,19 @@ class _WorldScreenState extends State<WorldScreen> {
                                 FilledButton(
                                   onPressed: hours == 0 ? null : _travel,
                                   child: Text(hours == 0 ? GameStrings.alreadyHere : GameStrings.travel(hours)),
+                                ),
+                              ],
+                            ),
+                          ),
+                        if (_controller.saveFailed)
+                          _MapPanel(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Text(GameStrings.saveFailed),
+                                TextButton(
+                                  onPressed: _controller.retrySave,
+                                  child: const Text(GameStrings.retry),
                                 ),
                               ],
                             ),

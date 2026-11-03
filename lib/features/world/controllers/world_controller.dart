@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 import '../../../core/services/game_clock.dart';
+import '../../../data/local/game_save_repository.dart';
 import '../../cultivation/cultivation_state.dart';
 import '../world_region.dart';
 
@@ -15,13 +16,103 @@ enum FloodChoice {
 }
 
 class WorldController extends ChangeNotifier {
-  final _clock = GameClock();
-  final cultivation = CultivationState();
-  WorldPlace _current = WorldPlace.cave;
-  WorldPlace _selected = WorldPlace.cave;
-  final _journal = <TravelEntry>[];
+  WorldController({
+    Map<String, dynamic>? snapshot,
+    GameSaveRepository? repository,
+  }) : _repository = repository,
+      _clock = GameClock(elapsedHours: snapshot == null ? 6 : snapshot['elapsedHours'] as int),
+      cultivation = snapshot == null
+          ? CultivationState()
+          : CultivationState(
+              realm: CultivationRealm.values.byName(snapshot['realm'] as String),
+              progress: snapshot['progress'] as int,
+              insights: (snapshot['insights'] as List<dynamic>)
+                  .map((name) => DaoNiem.values.byName(name as String)),
+            ),
+      _current = _savedPlace(snapshot),
+      _selected = _savedPlace(snapshot),
+      _journal = snapshot == null
+          ? []
+          : (snapshot['journal'] as List<dynamic>).map(_readEntry).toList(),
+      _floodResolved = snapshot == null ? false : snapshot['floodResolved'] as bool;
+
+  final GameSaveRepository? _repository;
+  final GameClock _clock;
+  final CultivationState cultivation;
+  WorldPlace _current;
+  WorldPlace _selected;
+  final List<TravelEntry> _journal;
   bool _floodPending = false;
-  bool _floodResolved = false;
+  bool _floodResolved;
+  bool _disposed = false;
+  bool _saveFailed = false;
+  Future<void> _writes = Future<void>.value();
+
+  bool get saveFailed => _saveFailed;
+
+  @override
+  void dispose() {
+    _disposed = true;
+    super.dispose();
+  }
+
+  static WorldPlace _savedPlace(Map<String, dynamic>? snapshot) =>
+      snapshot == null
+          ? WorldPlace.cave
+          : WorldPlace.values.byName(snapshot['current'] as String);
+
+  static TravelEntry _readEntry(dynamic value) {
+    final entry = value as Map<String, dynamic>;
+    final choice = entry['floodChoice'] as String?;
+    return (
+      place: WorldPlace.values.byName(entry['place'] as String),
+      hours: entry['hours'] as int,
+      day: entry['day'] as int,
+      hour: entry['hour'] as int,
+      floodChoice: choice == null ? null : FloodChoice.values.byName(choice),
+    );
+  }
+
+  void _commit() {
+    retrySave();
+    notifyListeners();
+  }
+
+  void retrySave() {
+    final repository = _repository;
+    if (repository == null) return;
+
+    final snapshot = <String, Object?>{
+      'version': 1,
+      'current': _current.name,
+      'elapsedHours': _clock.elapsedHours,
+      'realm': cultivation.realm.name,
+      'progress': cultivation.progress,
+      'insights': cultivation.insights.map((insight) => insight.name).toList(),
+      'floodResolved': _floodResolved,
+      'journal': [
+        for (final entry in _journal)
+          {
+            'place': entry.place.name,
+            'hours': entry.hours,
+            'day': entry.day,
+            'hour': entry.hour,
+            'floodChoice': entry.floodChoice?.name,
+          },
+      ],
+    };
+    _writes = _writes.then((_) async {
+      var failed = false;
+      try {
+        await repository.save(snapshot);
+      } catch (_) {
+        failed = true;
+      }
+      if (_disposed || failed == _saveFailed) return;
+      _saveFailed = failed;
+      notifyListeners();
+    });
+  }
 
   WorldPlace get current => _current;
   WorldPlace get selected => _selected;
@@ -45,12 +136,12 @@ class WorldController extends ChangeNotifier {
     if (!canCultivate) return;
     cultivation.retreat();
     _clock.advanceHours(CultivationState.retreatHours);
-    notifyListeners();
+    _commit();
   }
 
   void breakThrough(DaoNiem? insight) {
     if (!canCultivate || !cultivation.breakThrough(insight)) return;
-    notifyListeners();
+    _commit();
   }
 
   void select(WorldPlace place) {
@@ -94,7 +185,7 @@ class WorldController extends ChangeNotifier {
       hour: hour,
       floodChoice: choice,
     ));
-    notifyListeners();
+    _commit();
   }
 }
 

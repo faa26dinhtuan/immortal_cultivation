@@ -7,9 +7,17 @@ class CultivationState {
   static const retreatGain = 4;
   static const adaptabilityBonus = 6;
 
-  CultivationRealm _realm = CultivationRealm.mortal;
-  int _progress = 0;
-  final _insights = <DaoNiem>{};
+  CultivationState({
+    CultivationRealm realm = CultivationRealm.mortal,
+    int progress = 0,
+    Iterable<DaoNiem> insights = const [],
+  }) : _realm = realm,
+       _progress = progress,
+       _insights = insights.toSet();
+
+  CultivationRealm _realm;
+  int _progress;
+  final Set<DaoNiem> _insights;
 
   CultivationRealm get realm => _realm;
   int get progress => _progress;

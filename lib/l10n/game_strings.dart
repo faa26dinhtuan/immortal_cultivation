@@ -4,6 +4,10 @@ import '../features/world/world_region.dart';
 
 abstract final class GameStrings {
   static const appTitle = 'Immortal Cultivation';
+  static const loadingSave = 'Đang tải tiến độ';
+  static const loadFailed = 'Không đọc được tiến độ đã lưu.';
+  static const saveFailed = 'Chưa lưu được tiến độ.';
+  static const retry = 'Thử lại';
   static const regionLabel = 'Bản đồ vùng';
   static const regionName = 'Thanh Khê';
   static const mapDescription = 'Thung lũng nhìn từ trên cao, với sông, rừng và núi';
