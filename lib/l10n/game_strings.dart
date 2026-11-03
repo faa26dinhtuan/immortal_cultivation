@@ -88,4 +88,14 @@ abstract final class GameStrings {
     DaoNiem.patience => 'Nhẫn Nại · $cost tu vi',
     DaoNiem.adaptability => 'Ứng Biến · $cost tu vi\nNhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá',
   };
+
+  static const character = 'Nhân vật';
+  static const characterRealm = 'Cảnh giới';
+  static const characterInsights = 'Đạo Niệm';
+
+  static String characterInsightEffect(DaoNiem insight) => switch (insight) {
+    DaoNiem.patience => 'Giảm lượng tu vi cần để đột phá.',
+    DaoNiem.adaptability =>
+      'Nhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá.',
+  };
 }

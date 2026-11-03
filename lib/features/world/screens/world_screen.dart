@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
+import '../../character/widgets/character_sheet.dart';
 import '../../cultivation/widgets/cultivation_sheet.dart';
 import '../controllers/world_controller.dart';
 import '../widgets/flood_event_dialog.dart';
@@ -38,6 +39,20 @@ class _WorldScreenState extends State<WorldScreen> {
       if (choice == null) return;
     }
     setState(() => _showDestination = false);
+  }
+
+  void _openCharacter() {
+    final cultivation = _controller.cultivation;
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      useSafeArea: true,
+      builder: (context) => CharacterSheet(
+        realm: cultivation.realm,
+        progress: cultivation.progress,
+        insights: cultivation.insights.toList(growable: false),
+      ),
+    );
   }
 
   void _openCultivation() {
@@ -184,6 +199,16 @@ class _WorldScreenState extends State<WorldScreen> {
                           spacing: 8,
                           runSpacing: 8,
                           children: [
+                            FilledButton.tonalIcon(
+                              onPressed: _openCharacter,
+                              icon: Image.asset(
+                                CharacterSheet.iconAsset,
+                                width: 24,
+                                height: 24,
+                                excludeFromSemantics: true,
+                              ),
+                              label: const Text(GameStrings.character),
+                            ),
                             FilledButton.tonalIcon(
                               onPressed: _openCultivation,
                               icon: Image.asset(
