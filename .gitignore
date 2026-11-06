@@ -55,3 +55,4 @@ app.*.map.json
 /create_structure.ps1
 /art_previews/
 /*.zip
+/docs/design/
