@@ -10,7 +10,8 @@ abstract final class GameStrings {
   static const retry = 'Thử lại';
   static const regionLabel = 'Bản đồ vùng';
   static const regionName = 'Thanh Khê';
-  static const mapDescription = 'Thung lũng nhìn từ trên cao, với sông, rừng và núi';
+  static const mapDescription =
+      'Thung lũng nhìn từ trên cao, với sông, rừng và núi';
   static const alreadyHere = 'Đang ở đây';
   static const journal = 'Nhật ký';
   static const emptyJournal = 'Nhật ký còn trống.';
@@ -77,16 +78,21 @@ abstract final class GameStrings {
   };
 
   static String cultivationProgress(int progress) => 'Tu vi · $progress';
-  static String retreatAction(int hours, int gain) => 'Bế quan $hours giờ · +$gain tu vi';
+  static String retreatAction(int hours, int gain) =>
+      'Bế quan $hours giờ · +$gain tu vi';
 
   static String ownedInsights(Iterable<DaoNiem> insights) => insights.isEmpty
       ? noInsight
       : 'Đạo Niệm · ${insights.map(daoNiemName).join(', ')}';
 
-  static String breakthroughOption(DaoNiem? insight, int cost) => switch (insight) {
+  static String breakthroughOption(
+    DaoNiem? insight,
+    int cost,
+  ) => switch (insight) {
     null => 'Đột phá thường · $cost tu vi',
     DaoNiem.patience => 'Nhẫn Nại · $cost tu vi',
-    DaoNiem.adaptability => 'Ứng Biến · $cost tu vi\nNhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá',
+    DaoNiem.adaptability =>
+      'Ứng Biến · $cost tu vi\nNhận lại ${CultivationState.adaptabilityBonus} tu vi sau đột phá',
   };
 
   static const character = 'Nhân vật';
@@ -125,4 +131,27 @@ abstract final class GameStrings {
 
   static String surveyPass(int hours) => 'Khảo sát đèo · $hours giờ';
   static String manualEffect(int bonus) => '+$bonus tu vi mỗi lượt bế quan.';
+
+  static const walkingRoute = 'Lộ trình đi bộ';
+  static const resumeJourney = 'Xử lý biến cố để tiếp tục';
+  static const journeyInterrupted = 'Hành trình đang tạm dừng ở điểm vượt sông';
+  static const noRouteEvent = 'Chuyến này không có biến cố cần lựa chọn.';
+
+  static String routeStep(WorldTrail step) {
+    final terrain = switch (step.terrain) {
+      TrailTerrain.riverCrossing => 'vượt sông',
+      TrailTerrain.mountainPath => 'đường núi',
+    };
+    return '${placeName(step.from)} → ${placeName(step.to)} · '
+        '${step.hours} giờ · $terrain';
+  }
+
+  static String routeRisk(double risk) => risk == 0
+      ? noRouteEvent
+      : 'Nguy cơ nước dâng khoảng ${(risk * 100).round()}% cho cả chuyến. '
+            'Nếu gặp, chờ thêm 2 giờ hoặc đi vòng thêm 1 giờ.';
+
+  static String interruptedProgress(int elapsed, int remaining) =>
+      'Đã đi $elapsed giờ · Còn $remaining giờ di chuyển, '
+      'chưa tính thời gian xử lý biến cố.';
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
@@ -8,6 +9,7 @@ import '../../inventory/widgets/inventory_sheet.dart';
 import '../controllers/world_controller.dart';
 import '../widgets/flood_event_dialog.dart';
 import '../widgets/regional_map.dart';
+import '../widgets/route_preview.dart';
 
 class WorldScreen extends StatefulWidget {
   const WorldScreen({this.controller, super.key});
@@ -21,6 +23,18 @@ class WorldScreen extends StatefulWidget {
 class _WorldScreenState extends State<WorldScreen> {
   late final _controller = widget.controller ?? WorldController();
   bool _showDestination = false;
+  bool _eventOpen = false;
+
+  @override
+  void initState() {
+    super.initState();
+    if (_controller.floodPending) {
+      _showDestination = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _showTravelEvent();
+      });
+    }
+  }
 
   @override
   void dispose() {
@@ -29,17 +43,29 @@ class _WorldScreenState extends State<WorldScreen> {
   }
 
   Future<void> _travel() async {
+    HapticFeedback.lightImpact();
     if (_controller.beginTravel()) {
-      final choice = await showDialog<FloodChoice>(
-        context: context,
-        barrierDismissible: false,
-        builder: (context) => const FloodEventDialog(),
-      );
-      if (!mounted) return;
-      _controller.resolveFlood(choice);
-      if (choice == null) return;
+      await _showTravelEvent();
+      return;
     }
     setState(() => _showDestination = false);
+  }
+
+  Future<void> _showTravelEvent() async {
+    if (_eventOpen || !_controller.floodPending) return;
+    _eventOpen = true;
+    final choice = await showDialog<FloodChoice>(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => FloodEventDialog(
+        elapsedHours: _controller.journeyElapsedHours,
+        remainingHours: _controller.remainingHours,
+      ),
+    );
+    _eventOpen = false;
+    if (!mounted) return;
+    _controller.resolveFlood(choice);
+    setState(() => _showDestination = _controller.floodPending);
   }
 
   void _openCharacter() {
@@ -87,7 +113,10 @@ class _WorldScreenState extends State<WorldScreen> {
           shrinkWrap: true,
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
           children: [
-            Text(GameStrings.journal, style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              GameStrings.journal,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: 12),
             if (entries.isEmpty) const Text(GameStrings.emptyJournal),
             for (final entry in entries)
@@ -115,9 +144,11 @@ class _WorldScreenState extends State<WorldScreen> {
             children: [
               RegionalMap(
                 current: _controller.current,
+                interruptedTrail: _controller.interruptedTrail,
                 selected: _controller.selected,
                 route: _showDestination ? _controller.route : const [],
                 onSelect: (place) {
+                  if (_controller.floodPending) return;
                   setState(() => _showDestination = true);
                   _controller.select(place);
                 },
@@ -136,14 +167,28 @@ class _WorldScreenState extends State<WorldScreen> {
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(GameStrings.regionName, style: typography.titleLarge),
-                              Text(GameStrings.currentPlace(_controller.current)),
+                              Text(
+                                GameStrings.regionName,
+                                style: typography.titleLarge,
+                              ),
+                              Text(
+                                _controller.floodPending
+                                    ? GameStrings.journeyInterrupted
+                                    : GameStrings.currentPlace(
+                                        _controller.current,
+                                      ),
+                              ),
                             ],
                           ),
                         ),
                         const SizedBox(width: 16),
                         Flexible(
-                          child: Text(GameStrings.clock(_controller.day, _controller.hour)),
+                          child: Text(
+                            GameStrings.clock(
+                              _controller.day,
+                              _controller.hour,
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -162,54 +207,98 @@ class _WorldScreenState extends State<WorldScreen> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         if (_showDestination)
-                          _MapPanel(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Row(
+                          ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxHeight:
+                                  MediaQuery.sizeOf(context).height * .48,
+                            ),
+                            child: SingleChildScrollView(
+                              child: _MapPanel(
+                                child: Column(
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.stretch,
+                                  mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Expanded(
-                                      child: Text(
-                                        GameStrings.placeName(_controller.selected),
-                                        style: typography.titleMedium,
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            GameStrings.placeName(
+                                              _controller.selected,
+                                            ),
+                                            style: typography.titleMedium,
+                                          ),
+                                        ),
+                                        IconButton(
+                                          tooltip: GameStrings.closeDestination,
+                                          icon: const Icon(Icons.close),
+                                          onPressed: () => setState(
+                                            () => _showDestination = false,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Text(
+                                      GameStrings.placeDescription(
+                                        _controller.selected,
                                       ),
                                     ),
-                                    IconButton(
-                                      tooltip: GameStrings.closeDestination,
-                                      icon: const Icon(Icons.close),
-                                      onPressed: () => setState(() => _showDestination = false),
-                                    ),
+                                    const SizedBox(height: 8),
+                                    if (_controller.floodPending)
+                                      FilledButton(
+                                        onPressed: _showTravelEvent,
+                                        child: const Text(
+                                          GameStrings.resumeJourney,
+                                        ),
+                                      )
+                                    else if (_controller.canHarvest &&
+                                        _controller.selected ==
+                                            _controller.current) ...[
+                                      Text(
+                                        GameStrings.herbCount(
+                                          _controller.herbs,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      FilledButton(
+                                        onPressed: _controller.harvest,
+                                        child: Text(
+                                          GameStrings.harvestAction(
+                                            WorldController.harvestHours,
+                                          ),
+                                        ),
+                                      ),
+                                    ] else if (_controller.canSurveyPass &&
+                                        _controller.selected ==
+                                            _controller.current)
+                                      FilledButton(
+                                        onPressed: _controller.surveyPass,
+                                        child: Text(
+                                          GameStrings.surveyPass(
+                                            WorldController.surveyHours,
+                                          ),
+                                        ),
+                                      )
+                                    else ...[
+                                      if (hours > 0) ...[
+                                        RoutePreview(
+                                          steps: _controller.route,
+                                          risk: _controller.eventRisk,
+                                        ),
+                                        const SizedBox(height: 8),
+                                      ],
+                                      FilledButton(
+                                        onPressed: hours == 0 ? null : _travel,
+                                        child: Text(
+                                          hours == 0
+                                              ? GameStrings.alreadyHere
+                                              : GameStrings.travel(hours),
+                                        ),
+                                      ),
+                                    ],
                                   ],
                                 ),
-                                Text(GameStrings.placeDescription(_controller.selected)),
-                                const SizedBox(height: 8),
-                                if (_controller.canHarvest &&
-                                    _controller.selected == _controller.current) ...[
-                                  Text(GameStrings.herbCount(_controller.herbs)),
-                                  const SizedBox(height: 8),
-                                  FilledButton(
-                                    onPressed: _controller.harvest,
-                                    child: Text(GameStrings.harvestAction(
-                                      WorldController.harvestHours,
-                                    )),
-                                  ),
-                                ] else if (_controller.canSurveyPass &&
-                                    _controller.selected == _controller.current)
-                                  FilledButton(
-                                    onPressed: _controller.surveyPass,
-                                    child: Text(GameStrings.surveyPass(WorldController.surveyHours)),
-                                  )
-                                else
-                                  FilledButton(
-                                    onPressed: hours == 0 ? null : _travel,
-                                    child: Text(
-                                      hours == 0
-                                          ? GameStrings.alreadyHere
-                                          : GameStrings.travel(hours),
-                                    ),
-                                  ),
-                              ],
+                              ),
                             ),
                           ),
                         if (_controller.saveFailed)

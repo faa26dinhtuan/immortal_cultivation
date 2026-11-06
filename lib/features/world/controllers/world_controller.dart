@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/foundation.dart';
 
 import '../../../core/services/game_clock.dart';
@@ -25,33 +27,47 @@ class WorldController extends ChangeNotifier {
   WorldController({
     Map<String, dynamic>? snapshot,
     GameSaveRepository? repository,
+    Random? random,
   }) : _repository = repository,
-      _clock = GameClock(elapsedHours: snapshot == null ? 6 : snapshot['elapsedHours'] as int),
-      cultivation = snapshot == null
-          ? CultivationState()
-          : CultivationState(
-              realm: CultivationRealm.values.byName(snapshot['realm'] as String),
-              progress: snapshot['progress'] as int,
-              knowsManual: (snapshot['knowsManual'] as bool?) ?? false,
-              insights: (snapshot['insights'] as List<dynamic>)
-                  .map((name) => DaoNiem.values.byName(name as String)),
-            ),
-      _herbs = (snapshot?['herbs'] as int?) ?? 0,
-      _current = _savedPlace(snapshot),
-      _selected = _savedPlace(snapshot),
-      _journal = snapshot == null
-          ? []
-          : (snapshot['journal'] as List<dynamic>).map(_readEntry).toList(),
-      _floodResolved = snapshot == null ? false : snapshot['floodResolved'] as bool;
+       _random = random ?? Random(),
+       _journey = InterruptedJourney.fromJson(snapshot?['journey']),
+       _clock = GameClock(
+         elapsedHours: snapshot == null ? 6 : snapshot['elapsedHours'] as int,
+       ),
+       cultivation = snapshot == null
+           ? CultivationState()
+           : CultivationState(
+               realm: CultivationRealm.values.byName(
+                 snapshot['realm'] as String,
+               ),
+               progress: snapshot['progress'] as int,
+               knowsManual: (snapshot['knowsManual'] as bool?) ?? false,
+               insights: (snapshot['insights'] as List<dynamic>).map(
+                 (name) => DaoNiem.values.byName(name as String),
+               ),
+             ),
+       _herbs = (snapshot?['herbs'] as int?) ?? 0,
+       _current = _savedPlace(snapshot),
+       _selected =
+           InterruptedJourney.fromJson(snapshot?['journey'])?.destination ??
+           _savedPlace(snapshot),
+       _journal = snapshot == null
+           ? []
+           : (snapshot['journal'] as List<dynamic>).map(_readEntry).toList(),
+       _floodResolved = snapshot == null
+           ? false
+           : snapshot['floodResolved'] as bool;
 
   final GameSaveRepository? _repository;
+  final Random _random;
+  InterruptedJourney? _journey;
   final GameClock _clock;
   final CultivationState cultivation;
   WorldPlace _current;
   WorldPlace _selected;
   final List<JournalEntry> _journal;
   int _herbs;
-  bool _floodPending = false;
+  bool get floodPending => _journey != null;
   bool _floodResolved;
   bool _disposed = false;
   bool _saveFailed = false;
@@ -67,8 +83,8 @@ class WorldController extends ChangeNotifier {
 
   static WorldPlace _savedPlace(Map<String, dynamic>? snapshot) =>
       snapshot == null
-          ? WorldPlace.cave
-          : WorldPlace.values.byName(snapshot['current'] as String);
+      ? WorldPlace.cave
+      : WorldPlace.values.byName(snapshot['current'] as String);
 
   static JournalEntry _readEntry(dynamic value) {
     final entry = value as Map<String, dynamic>;
@@ -103,6 +119,7 @@ class WorldController extends ChangeNotifier {
       'herbs': _herbs,
       'insights': cultivation.insights.map((insight) => insight.name).toList(),
       'floodResolved': _floodResolved,
+      'journey': _journey?.toJson(),
       'journal': [
         for (final entry in _journal)
           {
@@ -134,21 +151,30 @@ class WorldController extends ChangeNotifier {
   int get hour => _clock.hour;
   Iterable<JournalEntry> get journal => _journal.reversed;
 
-  List<WorldTrail> get route {
-    final start = _current.index;
-    final end = _selected.index;
-    final first = start < end ? start : end;
-    final last = start < end ? end : start;
-    return regionalTrails.sublist(first, last);
-  }
+  List<WorldTrail> get route =>
+      _journey?.route ?? regionalRoute(_current, _selected);
+
+  double get eventRisk =>
+      !_floodResolved &&
+          cultivation.realm == CultivationRealm.mortal &&
+          route.any((trail) => trail.terrain == TrailTerrain.riverCrossing)
+      ? 0.1
+      : 0;
+
+  WorldTrail? get interruptedTrail => floodPending
+      ? route.firstWhere((trail) => trail.terrain == TrailTerrain.riverCrossing)
+      : null;
+
+  int get journeyElapsedHours => _journey?.elapsedHours ?? 0;
+  int get remainingHours => travelHours - journeyElapsedHours;
 
   int get travelHours => route.fold(0, (sum, trail) => sum + trail.hours);
 
-  bool get canCultivate => _current == WorldPlace.cave && !_floodPending;
+  bool get canCultivate => _current == WorldPlace.cave && !floodPending;
 
   int get herbs => _herbs;
 
-  bool get canHarvest => _current == WorldPlace.landing && !_floodPending;
+  bool get canHarvest => _current == WorldPlace.landing && !floodPending;
 
   void harvest() {
     if (!canHarvest) return;
@@ -166,7 +192,7 @@ class WorldController extends ChangeNotifier {
   }
 
   bool get canSurveyPass =>
-      _current == WorldPlace.pass && !_floodPending && !cultivation.knowsManual;
+      _current == WorldPlace.pass && !floodPending && !cultivation.knowsManual;
 
   void surveyPass() {
     if (!canSurveyPass) return;
@@ -198,39 +224,54 @@ class WorldController extends ChangeNotifier {
   }
 
   void select(WorldPlace place) {
-    if (_floodPending) return;
+    if (floodPending) return;
     _selected = place;
     notifyListeners();
   }
 
   bool beginTravel() {
-    if (_floodPending || _current == _selected) return false;
-
-    if (!_floodResolved &&
-        _current == WorldPlace.cave &&
-        _selected == WorldPlace.landing) {
-      _floodPending = true;
-      return true;
+    if (floodPending || _current == _selected) return false;
+    final steps = route;
+    if (steps.isEmpty) return false;
+    final origin = _current;
+    final hasFlood = eventRisk > 0 && _random.nextDouble() < eventRisk;
+    var elapsed = 0;
+    for (final step in steps) {
+      if (hasFlood && step.terrain == TrailTerrain.riverCrossing) {
+        final approachHours = step.hours ~/ 2;
+        elapsed += approachHours;
+        _clock.advanceHours(approachHours);
+        _journey = InterruptedJourney(
+          origin: origin,
+          destination: _selected,
+          elapsedHours: elapsed,
+        );
+        _commit();
+        return true;
+      }
+      _clock.advanceHours(step.hours);
+      elapsed += step.hours;
+      _current = step.to;
     }
-
-    _finishTravel();
+    _recordArrival(elapsed);
     return false;
   }
 
   void resolveFlood(FloodChoice? choice) {
-    if (!_floodPending) return;
-    _floodPending = false;
-    if (choice == null) return;
-
+    final journey = _journey;
+    if (journey == null || choice == null) return;
+    _clock.advanceHours(
+      journey.totalHours - journey.elapsedHours + choice.extraHours,
+    );
+    _current = journey.destination;
+    _selected = _current;
+    _journey = null;
     _floodResolved = true;
     cultivation.gainInsight(choice.daoNiem);
-    _finishTravel(choice);
+    _recordArrival(journey.totalHours + choice.extraHours, choice);
   }
 
-  void _finishTravel([FloodChoice? choice]) {
-    final hours = travelHours + (choice?.extraHours ?? 0);
-    _clock.advanceHours(hours);
-    _current = _selected;
+  void _recordArrival(int hours, [FloodChoice? choice]) {
     _journal.add((
       kind: JournalKind.travel,
       place: _current,

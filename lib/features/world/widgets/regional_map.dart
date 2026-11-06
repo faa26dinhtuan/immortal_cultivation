@@ -11,10 +11,12 @@ class RegionalMap extends StatelessWidget {
     required this.selected,
     required this.route,
     required this.onSelect,
+    this.interruptedTrail,
     super.key,
   });
 
   final WorldPlace current;
+  final WorldTrail? interruptedTrail;
   final WorldPlace selected;
   final List<WorldTrail> route;
   final ValueChanged<WorldPlace> onSelect;
@@ -35,11 +37,7 @@ class RegionalMap extends StatelessWidget {
 }
 
 class _MapViewport extends StatefulWidget {
-  const _MapViewport({
-    required this.viewport,
-    required this.map,
-    super.key,
-  });
+  const _MapViewport({required this.viewport, required this.map, super.key});
 
   final Size viewport;
   final RegionalMap map;
@@ -63,9 +61,15 @@ class _MapViewportState extends State<_MapViewport> {
     _scene = viewport.width / viewport.height > _aspectRatio
         ? Size(viewport.width, viewport.width / _aspectRatio)
         : Size(viewport.height * _aspectRatio, viewport.height);
-    final position = widget.map.current.position;
+    final interrupted = widget.map.interruptedTrail;
+    final position = interrupted == null
+        ? widget.map.current.position
+        : interrupted.waypoints[interrupted.waypoints.length ~/ 2];
     _transform = TransformationController(
-      _matrix(1, Offset(position.dx * _scene.width, position.dy * _scene.height)),
+      _matrix(
+        1,
+        Offset(position.dx * _scene.width, position.dy * _scene.height),
+      ),
     );
   }
 
@@ -78,10 +82,22 @@ class _MapViewportState extends State<_MapViewport> {
   Matrix4 _matrix(double scale, Offset focalPoint) {
     final viewport = widget.viewport;
     final x = (viewport.width / 2 - focalPoint.dx * scale)
-        .clamp((viewport.width - _scene.width * scale).clamp(double.negativeInfinity, 0.0), 0.0)
+        .clamp(
+          (viewport.width - _scene.width * scale).clamp(
+            double.negativeInfinity,
+            0.0,
+          ),
+          0.0,
+        )
         .toDouble();
     final y = (viewport.height / 2 - focalPoint.dy * scale)
-        .clamp((viewport.height - _scene.height * scale).clamp(double.negativeInfinity, 0.0), 0.0)
+        .clamp(
+          (viewport.height - _scene.height * scale).clamp(
+            double.negativeInfinity,
+            0.0,
+          ),
+          0.0,
+        )
         .toDouble();
     return Matrix4.diagonal3Values(scale, scale, 1)
       ..setEntry(0, 3, x)
@@ -122,11 +138,49 @@ class _MapViewportState extends State<_MapViewport> {
                   fit: BoxFit.cover,
                   semanticLabel: GameStrings.mapDescription,
                 ),
-                IgnorePointer(child: CustomPaint(painter: _RoutePainter(map.route))),
+                IgnorePointer(
+                  child: CustomPaint(painter: _RoutePainter(map.route)),
+                ),
+                if (map.interruptedTrail case final trail?)
+                  Positioned(
+                    left:
+                        trail.waypoints[trail.waypoints.length ~/ 2].dx *
+                            _scene.width -
+                        24,
+                    top:
+                        trail.waypoints[trail.waypoints.length ~/ 2].dy *
+                            _scene.height -
+                        24,
+                    child: ValueListenableBuilder<Matrix4>(
+                      valueListenable: _transform,
+                      builder: (context, matrix, child) => Transform.scale(
+                        scale: 1 / matrix.getMaxScaleOnAxis(),
+                        child: child,
+                      ),
+                      child: Tooltip(
+                        message: GameStrings.journeyInterrupted,
+                        child: SizedBox.square(
+                          dimension: 48,
+                          child: Center(
+                            child: Image.asset(
+                              'assets/icons/character/character.png',
+                              width: 32,
+                              height: 32,
+                              semanticLabel: GameStrings.journeyInterrupted,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 for (final place in WorldPlace.values)
                   Positioned(
-                    left: place.position.dx * _scene.width - GameTheme.pinSize / 2,
-                    top: place.position.dy * _scene.height - GameTheme.pinSize / 2,
+                    left:
+                        place.position.dx * _scene.width -
+                        GameTheme.pinSize / 2,
+                    top:
+                        place.position.dy * _scene.height -
+                        GameTheme.pinSize / 2,
                     child: ValueListenableBuilder<Matrix4>(
                       valueListenable: _transform,
                       builder: (context, matrix, child) => Transform.scale(
@@ -135,7 +189,9 @@ class _MapViewportState extends State<_MapViewport> {
                       ),
                       child: _PlacePin(
                         place: place,
-                        current: map.current == place,
+                        current:
+                            map.interruptedTrail == null &&
+                            map.current == place,
                         selected: map.selected == place,
                         onPressed: () => map.onSelect(place),
                       ),
@@ -163,12 +219,16 @@ class _MapViewportState extends State<_MapViewport> {
                       children: [
                         IconButton(
                           tooltip: GameStrings.zoomIn,
-                          onPressed: scale < _maxScale - .001 ? () => _zoom(_zoomStep) : null,
+                          onPressed: scale < _maxScale - .001
+                              ? () => _zoom(_zoomStep)
+                              : null,
                           icon: const Icon(Icons.add),
                         ),
                         IconButton(
                           tooltip: GameStrings.zoomOut,
-                          onPressed: scale > 1.001 ? () => _zoom(1 / _zoomStep) : null,
+                          onPressed: scale > 1.001
+                              ? () => _zoom(1 / _zoomStep)
+                              : null,
                           icon: const Icon(Icons.remove),
                         ),
                       ],
@@ -226,8 +286,10 @@ class _PlacePin extends StatelessWidget {
                 child: Image.asset(
                   switch (place) {
                     WorldPlace.cave => 'assets/icons/map_pins/cave.png',
-                    WorldPlace.landing => 'assets/icons/map_pins/river_landing.png',
-                    WorldPlace.pass => 'assets/icons/map_pins/mountain_pass.png',
+                    WorldPlace.landing =>
+                      'assets/icons/map_pins/river_landing.png',
+                    WorldPlace.pass =>
+                      'assets/icons/map_pins/mountain_pass.png',
                   },
                   width: GameTheme.pinIconSize,
                   height: GameTheme.pinIconSize,
@@ -255,10 +317,11 @@ class _RoutePainter extends CustomPainter {
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
     for (final trail in trails) {
-      final path = Path()..moveTo(
-        trail.from.position.dx * size.width,
-        trail.from.position.dy * size.height,
-      );
+      final path = Path()
+        ..moveTo(
+          trail.from.position.dx * size.width,
+          trail.from.position.dy * size.height,
+        );
       for (final point in [...trail.waypoints, trail.to.position]) {
         path.lineTo(point.dx * size.width, point.dy * size.height);
       }
