@@ -19,13 +19,22 @@ class RoutePreview extends StatelessWidget {
           GameStrings.walkingRoute,
           style: Theme.of(context).textTheme.titleSmall,
         ),
-        for (final step in steps)
-          Padding(
-            padding: const EdgeInsets.only(top: 4),
-            child: Text(GameStrings.routeStep(step)),
-          ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 4),
         Text(GameStrings.routeRisk(risk)),
+        ExpansionTile(
+          tilePadding: EdgeInsets.zero,
+          title: const Text(GameStrings.routeDetails),
+          children: [
+            for (final step in steps)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(GameStrings.routeStep(step)),
+                ),
+              ),
+          ],
+        ),
       ],
     );
   }

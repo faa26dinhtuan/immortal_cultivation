@@ -65,6 +65,13 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - assets/images/map/physical_scale.json
+    - assets/images/map/asset_catalog.json
+    - assets/images/map/landmarks/
+    - assets/images/map/roads/
+    - assets/images/map/terrain/
+    - assets/images/map/transitions/
+    - assets/images/map/bases/
     - assets/images/map/regional_map.png
     - assets/images/events/flooded_ford.png
     - assets/icons/map_pins/cave.png

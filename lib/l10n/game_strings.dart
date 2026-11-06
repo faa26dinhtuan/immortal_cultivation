@@ -40,8 +40,9 @@ abstract final class GameStrings {
 
   static const floodTitle = 'Nước dâng ven đường';
   static const floodDescription =
-      'Nước sông dâng qua bãi cạn. Bạn có thể chờ nước rút hoặc men theo bờ tìm lối vòng.';
-  static const floodImageDescription = 'Nước phủ lối đá qua sông ở Bến Hợp Lưu';
+      'Nước sông dâng ngập lối dẫn lên cầu gỗ. Bạn có thể chờ nước rút hoặc men theo bờ tìm lối vòng.';
+  static const floodImageDescription =
+      'Nước dâng phủ lối qua sông tại Thanh Khê';
 
   static String floodAction(FloodChoice choice) => switch (choice) {
     FloodChoice.wait => 'Chờ nước rút',
@@ -132,10 +133,11 @@ abstract final class GameStrings {
   static String surveyPass(int hours) => 'Khảo sát đèo · $hours giờ';
   static String manualEffect(int bonus) => '+$bonus tu vi mỗi lượt bế quan.';
 
-  static const walkingRoute = 'Lộ trình đi bộ';
+  static const walkingRoute = 'Quan lộ';
+  static const routeDetails = 'Chi tiết lộ trình';
   static const resumeJourney = 'Xử lý biến cố để tiếp tục';
   static const journeyInterrupted = 'Hành trình đang tạm dừng ở điểm vượt sông';
-  static const noRouteEvent = 'Chuyến này không có biến cố cần lựa chọn.';
+  static const noRouteEvent = 'Không có nguy cơ đã biết.';
 
   static String routeStep(WorldTrail step) {
     final terrain = switch (step.terrain) {
@@ -148,8 +150,7 @@ abstract final class GameStrings {
 
   static String routeRisk(double risk) => risk == 0
       ? noRouteEvent
-      : 'Nguy cơ nước dâng khoảng ${(risk * 100).round()}% cho cả chuyến. '
-            'Nếu gặp, chờ thêm 2 giờ hoặc đi vòng thêm 1 giờ.';
+      : 'Nguy cơ nước dâng khoảng ${(risk * 100).round()}% cho cả chuyến.';
 
   static String interruptedProgress(int elapsed, int remaining) =>
       'Đã đi $elapsed giờ · Còn $remaining giờ di chuyển, '

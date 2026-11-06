@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
 import '../world_region.dart';
+import 'regional_roads.dart';
 
 class RegionalMap extends StatelessWidget {
   const RegionalMap({
@@ -64,7 +65,7 @@ class _MapViewportState extends State<_MapViewport> {
     final interrupted = widget.map.interruptedTrail;
     final position = interrupted == null
         ? widget.map.current.position
-        : interrupted.waypoints[interrupted.waypoints.length ~/ 2];
+        : interrupted.eventPosition;
     _transform = TransformationController(
       _matrix(
         1,
@@ -138,19 +139,14 @@ class _MapViewportState extends State<_MapViewport> {
                   fit: BoxFit.cover,
                   semanticLabel: GameStrings.mapDescription,
                 ),
+                const IgnorePointer(child: RegionalRoads()),
                 IgnorePointer(
                   child: CustomPaint(painter: _RoutePainter(map.route)),
                 ),
                 if (map.interruptedTrail case final trail?)
                   Positioned(
-                    left:
-                        trail.waypoints[trail.waypoints.length ~/ 2].dx *
-                            _scene.width -
-                        24,
-                    top:
-                        trail.waypoints[trail.waypoints.length ~/ 2].dy *
-                            _scene.height -
-                        24,
+                    left: trail.eventPosition.dx * _scene.width - 24,
+                    top: trail.eventPosition.dy * _scene.height - 24,
                     child: ValueListenableBuilder<Matrix4>(
                       valueListenable: _transform,
                       builder: (context, matrix, child) => Transform.scale(

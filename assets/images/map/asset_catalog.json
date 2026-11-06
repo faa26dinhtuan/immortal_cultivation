@@ -1,0 +1,7287 @@
+{
+  "version": 1,
+  "status": "approved-art-exported-layout-pending",
+  "units": {
+    "metersPerDam": 500,
+    "distance": "Chinese li"
+  },
+  "scaleRules": "assets/images/map/physical_scale.json",
+  "notes": [
+    "Review names are editor metadata, not game-localized UI strings.",
+    "Ground footprint excludes vertical height and transparent image padding.",
+    "Atlas crop and alpha normalization are complete; anchors and component geography remain provisional until map layout.",
+    "Texture repetition and road/river connection geometry require validation in the actual layout."
+  ],
+  "assets": [
+    {
+      "id": "01-ground-01",
+      "key": "grass_green",
+      "reviewName": "Cỏ xanh",
+      "role": "bases",
+      "path": "assets/images/map/bases/grass_green.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-02",
+      "key": "grass_dry",
+      "reviewName": "Thảo nguyên khô",
+      "role": "bases",
+      "path": "assets/images/map/bases/grass_dry.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-03",
+      "key": "earth_brown",
+      "reviewName": "Đất nâu",
+      "role": "bases",
+      "path": "assets/images/map/bases/earth_brown.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-04",
+      "key": "rock_ground",
+      "reviewName": "Đất đá",
+      "role": "bases",
+      "path": "assets/images/map/bases/rock_ground.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-05",
+      "key": "sand",
+      "reviewName": "Cát",
+      "role": "bases",
+      "path": "assets/images/map/bases/sand.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-06",
+      "key": "alluvial_silt",
+      "reviewName": "Bùn phù sa",
+      "role": "bases",
+      "path": "assets/images/map/bases/alluvial_silt.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-07",
+      "key": "water_shallow",
+      "reviewName": "Nước nông",
+      "role": "bases",
+      "path": "assets/images/map/bases/water_shallow.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-08",
+      "key": "water_sea",
+      "reviewName": "Biển sâu",
+      "role": "bases",
+      "path": "assets/images/map/bases/water_sea.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "01-ground-09",
+      "key": "snow_ground",
+      "reviewName": "Tuyết",
+      "role": "bases",
+      "path": "assets/images/map/bases/snow_ground.png",
+      "footprintMeters": [
+        200,
+        200
+      ],
+      "footprintDam": [
+        0.4,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 412,
+        "contentRectPx": [
+          0,
+          0,
+          412,
+          412
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-01",
+      "key": "grass_green_to_dry",
+      "reviewName": "Cỏ xanh – cỏ khô",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_green_to_dry.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 424,
+        "heightPx": 288,
+        "contentRectPx": [
+          16,
+          16,
+          392,
+          256
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-02",
+      "key": "grass_to_earth",
+      "reviewName": "Cỏ xanh – đất",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_to_earth.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 440,
+        "heightPx": 383,
+        "contentRectPx": [
+          17,
+          17,
+          406,
+          349
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-03",
+      "key": "grass_to_sand",
+      "reviewName": "Cỏ xanh – cát",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_to_sand.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 427,
+        "heightPx": 388,
+        "contentRectPx": [
+          16,
+          16,
+          395,
+          356
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-04",
+      "key": "grass_to_rock",
+      "reviewName": "Cỏ xanh – đá",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_to_rock.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 427,
+        "heightPx": 367,
+        "contentRectPx": [
+          16,
+          16,
+          395,
+          335
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-05",
+      "key": "grass_dry_to_sand",
+      "reviewName": "Cỏ khô – cát",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_dry_to_sand.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 429,
+        "heightPx": 265,
+        "contentRectPx": [
+          16,
+          16,
+          397,
+          233
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-06",
+      "key": "silt_to_grass",
+      "reviewName": "Bùn – cỏ xanh",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/silt_to_grass.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 430,
+        "heightPx": 389,
+        "contentRectPx": [
+          16,
+          16,
+          398,
+          357
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-07",
+      "key": "sand_to_rock",
+      "reviewName": "Cát – đá",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/sand_to_rock.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 424,
+        "heightPx": 166,
+        "contentRectPx": [
+          16,
+          16,
+          392,
+          134
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-08",
+      "key": "snow_to_rock",
+      "reviewName": "Tuyết – đá",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/snow_to_rock.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 432,
+        "heightPx": 156,
+        "contentRectPx": [
+          16,
+          16,
+          400,
+          124
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "02-transitions-09",
+      "key": "grass_low_slope",
+      "reviewName": "Mép dốc cỏ thấp",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/grass_low_slope.png",
+      "footprintMeters": [
+        200,
+        70
+      ],
+      "footprintDam": [
+        0.4,
+        0.14
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 517,
+        "heightPx": 246,
+        "contentRectPx": [
+          20,
+          20,
+          477,
+          206
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-01",
+      "key": "river_narrow_straight",
+      "reviewName": "Sông nhỏ thẳng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_narrow_straight.png",
+      "footprintMeters": [
+        25,
+        300
+      ],
+      "footprintDam": [
+        0.05,
+        0.6
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 65,
+        "heightPx": 384,
+        "contentRectPx": [
+          16,
+          16,
+          33,
+          352
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-02",
+      "key": "river_narrow_curve",
+      "reviewName": "Sông nhỏ uốn",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_narrow_curve.png",
+      "footprintMeters": [
+        125,
+        300
+      ],
+      "footprintDam": [
+        0.25,
+        0.6
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 113,
+        "heightPx": 382,
+        "contentRectPx": [
+          16,
+          16,
+          81,
+          350
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-03",
+      "key": "river_narrow_corner",
+      "reviewName": "Sông nhỏ rẽ góc",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_narrow_corner.png",
+      "footprintMeters": [
+        250,
+        250
+      ],
+      "footprintDam": [
+        0.5,
+        0.5
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 262,
+        "heightPx": 281,
+        "contentRectPx": [
+          16,
+          16,
+          230,
+          249
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-04",
+      "key": "river_confluence",
+      "reviewName": "Hợp lưu",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_confluence.png",
+      "footprintMeters": [
+        275,
+        300
+      ],
+      "footprintDam": [
+        0.55,
+        0.6
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 221,
+        "heightPx": 353,
+        "contentRectPx": [
+          16,
+          16,
+          189,
+          321
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-05",
+      "key": "stream_spring",
+      "reviewName": "Nguồn suối",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/stream_spring.png",
+      "footprintMeters": [
+        150,
+        300
+      ],
+      "footprintDam": [
+        0.3,
+        0.6
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 171,
+        "heightPx": 376,
+        "contentRectPx": [
+          16,
+          16,
+          139,
+          344
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-06",
+      "key": "river_broad_straight",
+      "reviewName": "Sông lớn thẳng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_broad_straight.png",
+      "footprintMeters": [
+        80,
+        500
+      ],
+      "footprintDam": [
+        0.16,
+        1
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 105,
+        "heightPx": 383,
+        "contentRectPx": [
+          16,
+          16,
+          73,
+          351
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-07",
+      "key": "river_broad_curve",
+      "reviewName": "Sông lớn uốn",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_broad_curve.png",
+      "footprintMeters": [
+        250,
+        500
+      ],
+      "footprintDam": [
+        0.5,
+        1
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 163,
+        "heightPx": 381,
+        "contentRectPx": [
+          16,
+          16,
+          131,
+          349
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-08",
+      "key": "river_broad_corner",
+      "reviewName": "Sông lớn rẽ góc",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_broad_corner.png",
+      "footprintMeters": [
+        400,
+        400
+      ],
+      "footprintDam": [
+        0.8,
+        0.8
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 293,
+        "heightPx": 328,
+        "contentRectPx": [
+          16,
+          16,
+          261,
+          296
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "03-rivers-09",
+      "key": "river_rapids",
+      "reviewName": "Ghềnh nước",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_rapids.png",
+      "footprintMeters": [
+        80,
+        500
+      ],
+      "footprintDam": [
+        0.16,
+        1
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 129,
+        "heightPx": 379,
+        "contentRectPx": [
+          16,
+          16,
+          97,
+          347
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-01",
+      "key": "pond",
+      "reviewName": "Ao nhỏ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/pond.png",
+      "footprintMeters": [
+        80,
+        60
+      ],
+      "footprintDam": [
+        0.16,
+        0.12
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 397,
+        "heightPx": 381,
+        "contentRectPx": [
+          16,
+          16,
+          365,
+          349
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-02",
+      "key": "lake",
+      "reviewName": "Hồ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/lake.png",
+      "footprintMeters": [
+        600,
+        450
+      ],
+      "footprintDam": [
+        1.2,
+        0.9
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 451,
+        "heightPx": 435,
+        "contentRectPx": [
+          17,
+          17,
+          417,
+          401
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-03",
+      "key": "riverbank_earth",
+      "reviewName": "Bờ đất ven sông",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/riverbank_earth.png",
+      "footprintMeters": [
+        300,
+        75
+      ],
+      "footprintDam": [
+        0.6,
+        0.15
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 419,
+        "heightPx": 397,
+        "contentRectPx": [
+          16,
+          16,
+          387,
+          365
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-04",
+      "key": "shore_sand_convex",
+      "reviewName": "Bờ cát lồi",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/shore_sand_convex.png",
+      "footprintMeters": [
+        300,
+        250
+      ],
+      "footprintDam": [
+        0.6,
+        0.5
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 451,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          417
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-05",
+      "key": "shore_sand_concave",
+      "reviewName": "Bờ cát lõm",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/shore_sand_concave.png",
+      "footprintMeters": [
+        300,
+        250
+      ],
+      "footprintDam": [
+        0.6,
+        0.5
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 452,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          418
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-06",
+      "key": "sandbar",
+      "reviewName": "Bãi bồi",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/sandbar.png",
+      "footprintMeters": [
+        150,
+        75
+      ],
+      "footprintDam": [
+        0.3,
+        0.15
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 445,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          411
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-07",
+      "key": "river_delta",
+      "reviewName": "Cửa sông",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_delta.png",
+      "footprintMeters": [
+        500,
+        400
+      ],
+      "footprintDam": [
+        1,
+        0.8
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 452,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          418
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-08",
+      "key": "beach",
+      "reviewName": "Bãi biển",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/beach.png",
+      "footprintMeters": [
+        500,
+        125
+      ],
+      "footprintDam": [
+        1,
+        0.25
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 434,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          400
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "04-shores-09",
+      "key": "coast_rocky",
+      "reviewName": "Bờ biển đá",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/coast_rocky.png",
+      "footprintMeters": [
+        500,
+        200
+      ],
+      "footprintDam": [
+        1,
+        0.4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 452,
+        "heightPx": 411,
+        "contentRectPx": [
+          17,
+          17,
+          418,
+          377
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-01",
+      "key": "tree_broadleaf",
+      "reviewName": "Cây lá rộng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_broadleaf.png",
+      "footprintMeters": [
+        12,
+        12
+      ],
+      "footprintDam": [
+        0.024,
+        0.024
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 298,
+        "heightPx": 313,
+        "contentRectPx": [
+          16,
+          16,
+          266,
+          281
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-02",
+      "key": "tree_pine",
+      "reviewName": "Cây thông",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_pine.png",
+      "footprintMeters": [
+        9,
+        9
+      ],
+      "footprintDam": [
+        0.018,
+        0.018
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 387,
+        "heightPx": 400,
+        "contentRectPx": [
+          16,
+          16,
+          355,
+          368
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-03",
+      "key": "bamboo_clump",
+      "reviewName": "Bụi tre",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/bamboo_clump.png",
+      "footprintMeters": [
+        15,
+        15
+      ],
+      "footprintDam": [
+        0.03,
+        0.03
+      ],
+      "heightMeters": 16,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 325,
+        "heightPx": 214,
+        "contentRectPx": [
+          16,
+          16,
+          293,
+          182
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-04",
+      "key": "grove_sparse",
+      "reviewName": "Lùm cây thưa",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/grove_sparse.png",
+      "footprintMeters": [
+        35,
+        30
+      ],
+      "footprintDam": [
+        0.07,
+        0.06
+      ],
+      "heightMeters": 20,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 421,
+        "heightPx": 447,
+        "contentRectPx": [
+          17,
+          17,
+          387,
+          413
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-05",
+      "key": "forest_broadleaf",
+      "reviewName": "Rừng lá rộng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/forest_broadleaf.png",
+      "footprintMeters": [
+        70,
+        60
+      ],
+      "footprintDam": [
+        0.14,
+        0.12
+      ],
+      "heightMeters": 24,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 438,
+        "heightPx": 385,
+        "contentRectPx": [
+          17,
+          17,
+          404,
+          351
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-06",
+      "key": "forest_conifer",
+      "reviewName": "Rừng lá kim",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/forest_conifer.png",
+      "footprintMeters": [
+        80,
+        70
+      ],
+      "footprintDam": [
+        0.16,
+        0.14
+      ],
+      "heightMeters": 28,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1160,
+        "heightPx": 920,
+        "contentRectPx": [
+          43,
+          43,
+          1074,
+          834
+        ],
+        "paddingPx": 43,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-07",
+      "key": "forest_bamboo_edge",
+      "reviewName": "Bìa rừng tre",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/forest_bamboo_edge.png",
+      "footprintMeters": [
+        60,
+        60
+      ],
+      "footprintDam": [
+        0.12,
+        0.12
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 413,
+        "heightPx": 365,
+        "contentRectPx": [
+          16,
+          16,
+          381,
+          333
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-08",
+      "key": "reeds",
+      "reviewName": "Lau sậy",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/reeds.png",
+      "footprintMeters": [
+        12,
+        8
+      ],
+      "footprintDam": [
+        0.024,
+        0.016
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 440,
+        "heightPx": 295,
+        "contentRectPx": [
+          17,
+          17,
+          406,
+          261
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "05-vegetation-09",
+      "key": "scrub_dry",
+      "reviewName": "Bụi cây khô",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/scrub_dry.png",
+      "footprintMeters": [
+        16,
+        12
+      ],
+      "footprintDam": [
+        0.032,
+        0.024
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 435,
+        "heightPx": 276,
+        "contentRectPx": [
+          17,
+          17,
+          401,
+          242
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-01",
+      "key": "hill_grass",
+      "reviewName": "Đồi cỏ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/hill_grass.png",
+      "footprintMeters": [
+        800,
+        500
+      ],
+      "footprintDam": [
+        1.6,
+        1
+      ],
+      "heightMeters": 70,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 489,
+        "heightPx": 215,
+        "contentRectPx": [
+          19,
+          19,
+          451,
+          177
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-02",
+      "key": "hill_rocky",
+      "reviewName": "Đồi đá",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/hill_rocky.png",
+      "footprintMeters": [
+        1200,
+        800
+      ],
+      "footprintDam": [
+        2.4,
+        1.6
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 423,
+        "heightPx": 208,
+        "contentRectPx": [
+          16,
+          16,
+          391,
+          176
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-03",
+      "key": "ridge",
+      "reviewName": "Sống núi",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/ridge.png",
+      "footprintMeters": [
+        2400,
+        1400
+      ],
+      "footprintDam": [
+        4.8,
+        2.8
+      ],
+      "heightMeters": 1100,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 454,
+        "heightPx": 267,
+        "contentRectPx": [
+          17,
+          17,
+          420,
+          233
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-04",
+      "key": "mountain_summit",
+      "reviewName": "Đỉnh núi",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/mountain_summit.png",
+      "footprintMeters": [
+        2400,
+        2000
+      ],
+      "footprintDam": [
+        4.8,
+        4
+      ],
+      "heightMeters": 1800,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 420,
+        "heightPx": 309,
+        "contentRectPx": [
+          16,
+          16,
+          388,
+          277
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-05",
+      "key": "mountain_saddle",
+      "reviewName": "Khe đèo",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/mountain_saddle.png",
+      "footprintMeters": [
+        1200,
+        600
+      ],
+      "footprintDam": [
+        2.4,
+        1.2
+      ],
+      "heightMeters": 550,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 443,
+        "heightPx": 209,
+        "contentRectPx": [
+          17,
+          17,
+          409,
+          175
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-06",
+      "key": "plateau_edge",
+      "reviewName": "Mép cao nguyên",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/plateau_edge.png",
+      "footprintMeters": [
+        1400,
+        700
+      ],
+      "footprintDam": [
+        2.8,
+        1.4
+      ],
+      "heightMeters": 350,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 425,
+        "heightPx": 310,
+        "contentRectPx": [
+          16,
+          16,
+          393,
+          278
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-07",
+      "key": "cliff",
+      "reviewName": "Vách đá",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/cliff.png",
+      "footprintMeters": [
+        1000,
+        400
+      ],
+      "footprintDam": [
+        2,
+        0.8
+      ],
+      "heightMeters": 450,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 426,
+        "heightPx": 272,
+        "contentRectPx": [
+          16,
+          16,
+          394,
+          240
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-08",
+      "key": "ravine",
+      "reviewName": "Vực",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/ravine.png",
+      "footprintMeters": [
+        1500,
+        500
+      ],
+      "footprintDam": [
+        3,
+        1
+      ],
+      "heightMeters": 650,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 396,
+        "heightPx": 355,
+        "contentRectPx": [
+          16,
+          16,
+          364,
+          323
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "06-relief-09",
+      "key": "waterfall",
+      "reviewName": "Thác nước",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/waterfall.png",
+      "footprintMeters": [
+        60,
+        150
+      ],
+      "footprintDam": [
+        0.12,
+        0.3
+      ],
+      "heightMeters": 80,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 421,
+        "heightPx": 272,
+        "contentRectPx": [
+          16,
+          16,
+          389,
+          240
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-01",
+      "key": "road_forest_straight",
+      "reviewName": "Quan lộ xuyên rừng",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_forest_straight.png",
+      "footprintMeters": [
+        50,
+        150
+      ],
+      "footprintDam": [
+        0.1,
+        0.3
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 387,
+        "heightPx": 391,
+        "contentRectPx": [
+          16,
+          16,
+          355,
+          359
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-02",
+      "key": "road_forest_curve",
+      "reviewName": "Đường cong xuyên rừng",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_forest_curve.png",
+      "footprintMeters": [
+        80,
+        160
+      ],
+      "footprintDam": [
+        0.16,
+        0.32
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 399,
+        "heightPx": 386,
+        "contentRectPx": [
+          16,
+          16,
+          367,
+          354
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-03",
+      "key": "road_mountainside",
+      "reviewName": "Đường men núi",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_mountainside.png",
+      "footprintMeters": [
+        120,
+        120
+      ],
+      "footprintDam": [
+        0.24,
+        0.24
+      ],
+      "heightMeters": 45,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 425,
+        "heightPx": 383,
+        "contentRectPx": [
+          16,
+          16,
+          393,
+          351
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-04",
+      "key": "road_causeway",
+      "reviewName": "Đường đắp qua đất ẩm",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_causeway.png",
+      "footprintMeters": [
+        25,
+        100
+      ],
+      "footprintDam": [
+        0.05,
+        0.2
+      ],
+      "heightMeters": 2,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 395,
+        "heightPx": 325,
+        "contentRectPx": [
+          16,
+          16,
+          363,
+          293
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-05",
+      "key": "stream_ford",
+      "reviewName": "Bãi vượt suối",
+      "role": "roads",
+      "path": "assets/images/map/roads/stream_ford.png",
+      "footprintMeters": [
+        40,
+        45
+      ],
+      "footprintDam": [
+        0.08,
+        0.09
+      ],
+      "heightMeters": 2,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 396,
+        "heightPx": 334,
+        "contentRectPx": [
+          16,
+          16,
+          364,
+          302
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-06",
+      "key": "pier_wood",
+      "reviewName": "Bến gỗ",
+      "role": "roads",
+      "path": "assets/images/map/roads/pier_wood.png",
+      "footprintMeters": [
+        20,
+        40
+      ],
+      "footprintDam": [
+        0.04,
+        0.08
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 390,
+        "heightPx": 316,
+        "contentRectPx": [
+          16,
+          16,
+          358,
+          284
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-07",
+      "key": "quay_stone",
+      "reviewName": "Bến đá",
+      "role": "roads",
+      "path": "assets/images/map/roads/quay_stone.png",
+      "footprintMeters": [
+        30,
+        40
+      ],
+      "footprintDam": [
+        0.06,
+        0.08
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 422,
+        "heightPx": 296,
+        "contentRectPx": [
+          16,
+          16,
+          390,
+          264
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-08",
+      "key": "road_mountain_switchback",
+      "reviewName": "Đường vòng sườn núi",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_mountain_switchback.png",
+      "footprintMeters": [
+        150,
+        180
+      ],
+      "footprintDam": [
+        0.3,
+        0.36
+      ],
+      "heightMeters": 70,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 418,
+        "heightPx": 414,
+        "contentRectPx": [
+          16,
+          16,
+          386,
+          382
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "07-route-interfaces-09",
+      "key": "road_stop_threeway",
+      "reviewName": "Bãi dừng ngã ba",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_stop_threeway.png",
+      "footprintMeters": [
+        65,
+        60
+      ],
+      "footprintDam": [
+        0.13,
+        0.12
+      ],
+      "heightMeters": 4,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 418,
+        "heightPx": 391,
+        "contentRectPx": [
+          16,
+          16,
+          386,
+          359
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-01",
+      "key": "road_stop_fourway",
+      "reviewName": "Bãi dừng ngã tư",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_stop_fourway.png",
+      "footprintMeters": [
+        65,
+        60
+      ],
+      "footprintDam": [
+        0.13,
+        0.12
+      ],
+      "heightMeters": 4,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1274,
+        "heightPx": 1122,
+        "contentRectPx": [
+          48,
+          48,
+          1178,
+          1026
+        ],
+        "paddingPx": 48,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-02",
+      "key": "port_medium",
+      "reviewName": "Cảng vừa",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/port_medium.png",
+      "footprintMeters": [
+        200,
+        160
+      ],
+      "footprintDam": [
+        0.4,
+        0.32
+      ],
+      "heightMeters": 28,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 553,
+        "heightPx": 389,
+        "contentRectPx": [
+          21,
+          21,
+          511,
+          347
+        ],
+        "paddingPx": 21,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-03",
+      "key": "port_large",
+      "reviewName": "Cảng lớn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/port_large.png",
+      "footprintMeters": [
+        550,
+        400
+      ],
+      "footprintDam": [
+        1.1,
+        0.8
+      ],
+      "heightMeters": 60,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 554,
+        "heightPx": 465,
+        "contentRectPx": [
+          21,
+          21,
+          512,
+          423
+        ],
+        "paddingPx": 21,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-01",
+      "key": "hamlet",
+      "reviewName": "Thôn nhỏ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/hamlet.png",
+      "footprintMeters": [
+        65,
+        50
+      ],
+      "footprintDam": [
+        0.13,
+        0.1
+      ],
+      "heightMeters": 7,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 171,
+        "heightPx": 166,
+        "contentRectPx": [
+          16,
+          16,
+          139,
+          134
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-02",
+      "key": "village",
+      "reviewName": "Làng",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/village.png",
+      "footprintMeters": [
+        150,
+        115
+      ],
+      "footprintDam": [
+        0.3,
+        0.23
+      ],
+      "heightMeters": 9,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 292,
+        "heightPx": 238,
+        "contentRectPx": [
+          16,
+          16,
+          260,
+          206
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-03",
+      "key": "town",
+      "reviewName": "Thị trấn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/town.png",
+      "footprintMeters": [
+        320,
+        260
+      ],
+      "footprintDam": [
+        0.64,
+        0.52
+      ],
+      "heightMeters": 16,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1296,
+        "heightPx": 1138,
+        "contentRectPx": [
+          48,
+          48,
+          1200,
+          1042
+        ],
+        "paddingPx": 48,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-04",
+      "key": "county_city",
+      "reviewName": "Thành huyện",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/county_city.png",
+      "footprintMeters": [
+        800,
+        700
+      ],
+      "footprintDam": [
+        1.6,
+        1.4
+      ],
+      "heightMeters": 60,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1323,
+        "heightPx": 1197,
+        "contentRectPx": [
+          49,
+          49,
+          1225,
+          1099
+        ],
+        "paddingPx": 49,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-05",
+      "key": "capital_city",
+      "reviewName": "Kinh đô",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/capital_city.png",
+      "footprintMeters": [
+        2400,
+        2100
+      ],
+      "footprintDam": [
+        4.8,
+        4.2
+      ],
+      "heightMeters": 240,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1356,
+        "heightPx": 1330,
+        "contentRectPx": [
+          51,
+          51,
+          1254,
+          1228
+        ],
+        "paddingPx": 51,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-06",
+      "key": "martial_school",
+      "reviewName": "Võ quán",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/martial_school.png",
+      "footprintMeters": [
+        110,
+        90
+      ],
+      "footprintDam": [
+        0.22,
+        0.18
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 415,
+        "heightPx": 308,
+        "contentRectPx": [
+          16,
+          16,
+          383,
+          276
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-07",
+      "key": "shrine",
+      "reviewName": "Miếu",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/shrine.png",
+      "footprintMeters": [
+        45,
+        35
+      ],
+      "footprintDam": [
+        0.09,
+        0.07
+      ],
+      "heightMeters": 12,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 235,
+        "heightPx": 206,
+        "contentRectPx": [
+          16,
+          16,
+          203,
+          174
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-08",
+      "key": "watchtower",
+      "reviewName": "Tháp canh",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/watchtower.png",
+      "footprintMeters": [
+        20,
+        20
+      ],
+      "footprintDam": [
+        0.04,
+        0.04
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 320,
+        "heightPx": 197,
+        "contentRectPx": [
+          16,
+          16,
+          288,
+          165
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "08-settlements-09",
+      "key": "inn",
+      "reviewName": "Quán trọ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/inn.png",
+      "footprintMeters": [
+        70,
+        50
+      ],
+      "footprintDam": [
+        0.14,
+        0.1
+      ],
+      "heightMeters": 14,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 327,
+        "heightPx": 222,
+        "contentRectPx": [
+          16,
+          16,
+          295,
+          190
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-01",
+      "key": "dunes",
+      "reviewName": "Cồn cát",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/dunes.png",
+      "footprintMeters": [
+        500,
+        400
+      ],
+      "footprintDam": [
+        1,
+        0.8
+      ],
+      "heightMeters": 60,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 389,
+        "heightPx": 217,
+        "contentRectPx": [
+          16,
+          16,
+          357,
+          185
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-02",
+      "key": "desert_outcrop",
+      "reviewName": "Đá sa mạc",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/desert_outcrop.png",
+      "footprintMeters": [
+        120,
+        90
+      ],
+      "footprintDam": [
+        0.24,
+        0.18
+      ],
+      "heightMeters": 50,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 406,
+        "heightPx": 284,
+        "contentRectPx": [
+          16,
+          16,
+          374,
+          252
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-03",
+      "key": "salt_flat",
+      "reviewName": "Đất muối khô",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/salt_flat.png",
+      "footprintMeters": [
+        500,
+        400
+      ],
+      "footprintDam": [
+        1,
+        0.8
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 393,
+        "heightPx": 264,
+        "contentRectPx": [
+          16,
+          16,
+          361,
+          232
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-04",
+      "key": "mountain_snow",
+      "reviewName": "Núi tuyết",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/mountain_snow.png",
+      "footprintMeters": [
+        3000,
+        1400
+      ],
+      "footprintDam": [
+        6,
+        2.8
+      ],
+      "heightMeters": 2200,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 431,
+        "heightPx": 243,
+        "contentRectPx": [
+          16,
+          16,
+          399,
+          211
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-05",
+      "key": "ice_shelf",
+      "reviewName": "Thềm băng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/ice_shelf.png",
+      "footprintMeters": [
+        800,
+        500
+      ],
+      "footprintDam": [
+        1.6,
+        1
+      ],
+      "heightMeters": 30,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 418,
+        "heightPx": 229,
+        "contentRectPx": [
+          16,
+          16,
+          386,
+          197
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-06",
+      "key": "coastal_reef",
+      "reviewName": "Đá ngầm ven biển",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/coastal_reef.png",
+      "footprintMeters": [
+        60,
+        45
+      ],
+      "footprintDam": [
+        0.12,
+        0.09
+      ],
+      "heightMeters": 8,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 419,
+        "heightPx": 216,
+        "contentRectPx": [
+          16,
+          16,
+          387,
+          184
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-07",
+      "key": "island",
+      "reviewName": "Đảo nhỏ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/island.png",
+      "footprintMeters": [
+        1000,
+        800
+      ],
+      "footprintDam": [
+        2,
+        1.6
+      ],
+      "heightMeters": 250,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 394,
+        "heightPx": 252,
+        "contentRectPx": [
+          16,
+          16,
+          362,
+          220
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-08",
+      "key": "wetland",
+      "reviewName": "Đất ngập nước",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/wetland.png",
+      "footprintMeters": [
+        250,
+        200
+      ],
+      "footprintDam": [
+        0.5,
+        0.4
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 405,
+        "heightPx": 255,
+        "contentRectPx": [
+          16,
+          16,
+          373,
+          223
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "09-frontier-09",
+      "key": "basalt_outcrop",
+      "reviewName": "Đá bazan",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/basalt_outcrop.png",
+      "footprintMeters": [
+        160,
+        120
+      ],
+      "footprintDam": [
+        0.32,
+        0.24
+      ],
+      "heightMeters": 65,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 412,
+        "heightPx": 274,
+        "contentRectPx": [
+          16,
+          16,
+          380,
+          242
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-01",
+      "key": "ruins",
+      "reviewName": "Phế tích",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/ruins.png",
+      "footprintMeters": [
+        100,
+        80
+      ],
+      "footprintDam": [
+        0.2,
+        0.16
+      ],
+      "heightMeters": 9,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 407,
+        "heightPx": 307,
+        "contentRectPx": [
+          16,
+          16,
+          375,
+          275
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-02",
+      "key": "abandoned_tower",
+      "reviewName": "Tháp hoang",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/abandoned_tower.png",
+      "footprintMeters": [
+        25,
+        25
+      ],
+      "footprintDam": [
+        0.05,
+        0.05
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 368,
+        "heightPx": 365,
+        "contentRectPx": [
+          16,
+          16,
+          336,
+          333
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-03",
+      "key": "ore_outcrop",
+      "reviewName": "Khoáng mạch",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/ore_outcrop.png",
+      "footprintMeters": [
+        35,
+        25
+      ],
+      "footprintDam": [
+        0.07,
+        0.05
+      ],
+      "heightMeters": 8,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 426,
+        "heightPx": 284,
+        "contentRectPx": [
+          16,
+          16,
+          394,
+          252
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-04",
+      "key": "mine_entrance",
+      "reviewName": "Cửa mỏ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/mine_entrance.png",
+      "footprintMeters": [
+        45,
+        40
+      ],
+      "footprintDam": [
+        0.09,
+        0.08
+      ],
+      "heightMeters": 14,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 404,
+        "heightPx": 328,
+        "contentRectPx": [
+          16,
+          16,
+          372,
+          296
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-05",
+      "key": "herb_garden",
+      "reviewName": "Dược điền",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/herb_garden.png",
+      "footprintMeters": [
+        80,
+        60
+      ],
+      "footprintDam": [
+        0.16,
+        0.12
+      ],
+      "heightMeters": 2,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 419,
+        "heightPx": 305,
+        "contentRectPx": [
+          16,
+          16,
+          387,
+          273
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-06",
+      "key": "bandit_camp",
+      "reviewName": "Trại thổ phỉ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/bandit_camp.png",
+      "footprintMeters": [
+        100,
+        80
+      ],
+      "footprintDam": [
+        0.2,
+        0.16
+      ],
+      "heightMeters": 8,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 414,
+        "heightPx": 329,
+        "contentRectPx": [
+          16,
+          16,
+          382,
+          297
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-07",
+      "key": "ancient_shrine_stele",
+      "reviewName": "Miếu cổ và bia đá",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/ancient_shrine_stele.png",
+      "footprintMeters": [
+        30,
+        30
+      ],
+      "footprintDam": [
+        0.06,
+        0.06
+      ],
+      "heightMeters": 8,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 431,
+        "heightPx": 320,
+        "contentRectPx": [
+          16,
+          16,
+          399,
+          288
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-08",
+      "key": "teleportation_platform",
+      "reviewName": "Trận truyền tống",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/teleportation_platform.png",
+      "footprintMeters": [
+        35,
+        35
+      ],
+      "footprintDam": [
+        0.07,
+        0.07
+      ],
+      "heightMeters": 2,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 454,
+        "heightPx": 318,
+        "contentRectPx": [
+          17,
+          17,
+          420,
+          284
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "10-exploration-09",
+      "key": "mountain_checkpoint",
+      "reviewName": "Trạm gác sơn đạo",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/mountain_checkpoint.png",
+      "footprintMeters": [
+        50,
+        40
+      ],
+      "footprintDam": [
+        0.1,
+        0.08
+      ],
+      "heightMeters": 12,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 430,
+        "heightPx": 350,
+        "contentRectPx": [
+          16,
+          16,
+          398,
+          318
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-04",
+      "key": "ruins_grand",
+      "reviewName": "Đại phế tích",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/ruins_grand.png",
+      "footprintMeters": [
+        450,
+        350
+      ],
+      "footprintDam": [
+        0.9,
+        0.7
+      ],
+      "heightMeters": 50,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 554,
+        "heightPx": 502,
+        "contentRectPx": [
+          21,
+          21,
+          512,
+          460
+        ],
+        "paddingPx": 21,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-05",
+      "key": "army_camp",
+      "reviewName": "Doanh trại quân đội",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/army_camp.png",
+      "footprintMeters": [
+        250,
+        200
+      ],
+      "footprintDam": [
+        0.5,
+        0.4
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 544,
+        "heightPx": 474,
+        "contentRectPx": [
+          21,
+          21,
+          502,
+          432
+        ],
+        "paddingPx": 21,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "16-travel-explore-06",
+      "key": "tower_sky_piercing",
+      "reviewName": "Tháp đá chọc trời",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/tower_sky_piercing.png",
+      "footprintMeters": [
+        600,
+        600
+      ],
+      "footprintDam": [
+        1.2,
+        1.2
+      ],
+      "heightMeters": 1200,
+      "unique": true,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 547,
+        "heightPx": 582,
+        "contentRectPx": [
+          22,
+          22,
+          503,
+          538
+        ],
+        "paddingPx": 22,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1
+    },
+    {
+      "id": "11-stone-01",
+      "key": "paving_intact",
+      "reviewName": "Đá lát nguyên vẹn",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_intact.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 362,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          362
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-02",
+      "key": "paving_large_slabs",
+      "reviewName": "Đá lát tảng lớn",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_large_slabs.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 367,
+        "heightPx": 362,
+        "contentRectPx": [
+          0,
+          0,
+          367,
+          362
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-03",
+      "key": "paving_small_blocks",
+      "reviewName": "Đá lát khối nhỏ",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_small_blocks.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 362,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          362
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-04",
+      "key": "paving_cracked",
+      "reviewName": "Đá lát nứt",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_cracked.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-05",
+      "key": "paving_missing_blocks",
+      "reviewName": "Đá lát mất mảng",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_missing_blocks.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 367,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          367,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-06",
+      "key": "paving_sunken",
+      "reviewName": "Đá lát lún hỏng",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_sunken.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-07",
+      "key": "paving_moss_sparse",
+      "reviewName": "Đá lát rêu thưa",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_moss_sparse.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-08",
+      "key": "paving_moss_dense",
+      "reviewName": "Đá lát rêu dày",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_moss_dense.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 367,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          367,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "11-stone-09",
+      "key": "paving_moss_patches",
+      "reviewName": "Đá lát lâu ngày bám rêu",
+      "role": "bases",
+      "path": "assets/images/map/bases/paving_moss_patches.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 366,
+        "heightPx": 363,
+        "contentRectPx": [
+          0,
+          0,
+          366,
+          363
+        ],
+        "paddingPx": 0,
+        "opaque": true,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-01",
+      "key": "paving_to_grass",
+      "reviewName": "Đá nguyên – cỏ",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_to_grass.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 374,
+        "heightPx": 220,
+        "contentRectPx": [
+          16,
+          16,
+          342,
+          188
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-02",
+      "key": "paving_to_earth",
+      "reviewName": "Đá nguyên – đất",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_to_earth.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 371,
+        "heightPx": 217,
+        "contentRectPx": [
+          16,
+          16,
+          339,
+          185
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-03",
+      "key": "paving_to_sand",
+      "reviewName": "Đá nguyên – cát",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_to_sand.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 370,
+        "heightPx": 220,
+        "contentRectPx": [
+          16,
+          16,
+          338,
+          188
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-04",
+      "key": "paving_damaged_to_grass",
+      "reviewName": "Đá hỏng – cỏ",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_damaged_to_grass.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 374,
+        "heightPx": 226,
+        "contentRectPx": [
+          16,
+          16,
+          342,
+          194
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-05",
+      "key": "paving_damaged_to_earth",
+      "reviewName": "Đá hỏng – đất",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_damaged_to_earth.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 373,
+        "heightPx": 223,
+        "contentRectPx": [
+          16,
+          16,
+          341,
+          191
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-06",
+      "key": "paving_damaged_to_sand",
+      "reviewName": "Đá hỏng – cát",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_damaged_to_sand.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 374,
+        "heightPx": 221,
+        "contentRectPx": [
+          16,
+          16,
+          342,
+          189
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-07",
+      "key": "paving_moss_to_grass",
+      "reviewName": "Đá rêu – cỏ",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_moss_to_grass.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 371,
+        "heightPx": 236,
+        "contentRectPx": [
+          16,
+          16,
+          339,
+          204
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-08",
+      "key": "paving_moss_to_earth",
+      "reviewName": "Đá rêu – đất ẩm",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_moss_to_earth.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 372,
+        "heightPx": 257,
+        "contentRectPx": [
+          16,
+          16,
+          340,
+          225
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-09",
+      "key": "paving_moss_to_sand",
+      "reviewName": "Đá rêu – cát",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_moss_to_sand.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 373,
+        "heightPx": 222,
+        "contentRectPx": [
+          16,
+          16,
+          341,
+          190
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-10",
+      "key": "paving_to_snow",
+      "reviewName": "Đá nguyên – tuyết",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_to_snow.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 371,
+        "heightPx": 229,
+        "contentRectPx": [
+          16,
+          16,
+          339,
+          197
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-11",
+      "key": "paving_damaged_to_snow",
+      "reviewName": "Đá hỏng – tuyết",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_damaged_to_snow.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 372,
+        "heightPx": 226,
+        "contentRectPx": [
+          16,
+          16,
+          340,
+          194
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "12-stone-edges-12",
+      "key": "paving_moss_to_snow",
+      "reviewName": "Đá rêu – tuyết",
+      "role": "transitions",
+      "path": "assets/images/map/transitions/paving_moss_to_snow.png",
+      "footprintMeters": [
+        40,
+        20
+      ],
+      "footprintDam": [
+        0.08,
+        0.04
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Kích thước mảnh địa hình hoặc bề mặt trong hệ mét; căn đầu nối theo layout thực tế.",
+      "image": {
+        "widthPx": 370,
+        "heightPx": 227,
+        "contentRectPx": [
+          16,
+          16,
+          338,
+          195
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-01",
+      "key": "tree_red",
+      "reviewName": "Cây lá đỏ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_red.png",
+      "footprintMeters": [
+        12,
+        12
+      ],
+      "footprintDam": [
+        0.024,
+        0.024
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 419,
+        "heightPx": 361,
+        "contentRectPx": [
+          16,
+          16,
+          387,
+          329
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-02",
+      "key": "tree_yellow",
+      "reviewName": "Cây lá vàng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_yellow.png",
+      "footprintMeters": [
+        12,
+        12
+      ],
+      "footprintDam": [
+        0.024,
+        0.024
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 437,
+        "heightPx": 386,
+        "contentRectPx": [
+          17,
+          17,
+          403,
+          352
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-03",
+      "key": "tree_orange",
+      "reviewName": "Cây lá cam",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_orange.png",
+      "footprintMeters": [
+        12,
+        12
+      ],
+      "footprintDam": [
+        0.024,
+        0.024
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 416,
+        "heightPx": 358,
+        "contentRectPx": [
+          16,
+          16,
+          384,
+          326
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-04",
+      "key": "tree_leafless",
+      "reviewName": "Cây trụi lá",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_leafless.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 409,
+        "heightPx": 368,
+        "contentRectPx": [
+          16,
+          16,
+          377,
+          336
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-05",
+      "key": "tree_stump",
+      "reviewName": "Gốc cây",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_stump.png",
+      "footprintMeters": [
+        4,
+        4
+      ],
+      "footprintDam": [
+        0.008,
+        0.008
+      ],
+      "heightMeters": 1.5,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 380,
+        "heightPx": 293,
+        "contentRectPx": [
+          16,
+          16,
+          348,
+          261
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-06",
+      "key": "tree_broadleaf_snow",
+      "reviewName": "Cây lá rộng phủ tuyết",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_broadleaf_snow.png",
+      "footprintMeters": [
+        12,
+        12
+      ],
+      "footprintDam": [
+        0.024,
+        0.024
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 438,
+        "heightPx": 395,
+        "contentRectPx": [
+          17,
+          17,
+          404,
+          361
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-07",
+      "key": "tree_pine_snow",
+      "reviewName": "Thông phủ tuyết",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_pine_snow.png",
+      "footprintMeters": [
+        9,
+        9
+      ],
+      "footprintDam": [
+        0.018,
+        0.018
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 418,
+        "heightPx": 429,
+        "contentRectPx": [
+          16,
+          16,
+          386,
+          397
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-08",
+      "key": "cactus_group",
+      "reviewName": "Xương rồng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/cactus_group.png",
+      "footprintMeters": [
+        8,
+        8
+      ],
+      "footprintDam": [
+        0.016,
+        0.016
+      ],
+      "heightMeters": 6,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 338,
+        "heightPx": 324,
+        "contentRectPx": [
+          16,
+          16,
+          306,
+          292
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "13-trees-09",
+      "key": "tree_ancient",
+      "reviewName": "Cổ thụ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_ancient.png",
+      "footprintMeters": [
+        60,
+        60
+      ],
+      "footprintDam": [
+        0.12,
+        0.12
+      ],
+      "heightMeters": 45,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 543,
+        "heightPx": 416,
+        "contentRectPx": [
+          21,
+          21,
+          501,
+          374
+        ],
+        "paddingPx": 21,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "29-tree-variants-1",
+      "key": "tree_leafless_tall",
+      "reviewName": "Cây trụi lá dáng cao",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_leafless_tall.png",
+      "footprintMeters": [
+        10,
+        10
+      ],
+      "footprintDam": [
+        0.02,
+        0.02
+      ],
+      "heightMeters": 24,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 602,
+        "heightPx": 645,
+        "contentRectPx": [
+          24,
+          24,
+          554,
+          597
+        ],
+        "paddingPx": 24,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "29-tree-variants-2",
+      "key": "tree_dead_windswept",
+      "reviewName": "Cây khô nghiêng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/tree_dead_windswept.png",
+      "footprintMeters": [
+        12,
+        10
+      ],
+      "footprintDam": [
+        0.024,
+        0.02
+      ],
+      "heightMeters": 14,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 642,
+        "heightPx": 673,
+        "contentRectPx": [
+          25,
+          25,
+          592,
+          623
+        ],
+        "paddingPx": 25,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "29-tree-variants-3",
+      "key": "stump_low",
+      "reviewName": "Gốc cây chặt thấp",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/stump_low.png",
+      "footprintMeters": [
+        2.5,
+        2.5
+      ],
+      "footprintDam": [
+        0.005,
+        0.005
+      ],
+      "heightMeters": 0.7,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 527,
+        "heightPx": 437,
+        "contentRectPx": [
+          20,
+          20,
+          487,
+          397
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "29-tree-variants-4",
+      "key": "stump_hollow",
+      "reviewName": "Gốc cây mục rỗng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/stump_hollow.png",
+      "footprintMeters": [
+        5,
+        5
+      ],
+      "footprintDam": [
+        0.01,
+        0.01
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 592,
+        "heightPx": 503,
+        "contentRectPx": [
+          22,
+          22,
+          548,
+          459
+        ],
+        "paddingPx": 22,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-01",
+      "key": "canal_straight",
+      "reviewName": "Kênh thẳng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/canal_straight.png",
+      "footprintMeters": [
+        15,
+        200
+      ],
+      "footprintDam": [
+        0.03,
+        0.4
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 283,
+        "heightPx": 408,
+        "contentRectPx": [
+          16,
+          16,
+          251,
+          376
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-02",
+      "key": "canal_curve",
+      "reviewName": "Kênh uốn",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/canal_curve.png",
+      "footprintMeters": [
+        75,
+        200
+      ],
+      "footprintDam": [
+        0.15,
+        0.4
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 416,
+        "heightPx": 380,
+        "contentRectPx": [
+          16,
+          16,
+          384,
+          348
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-03",
+      "key": "canal_junction",
+      "reviewName": "Kênh ngã ba",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/canal_junction.png",
+      "footprintMeters": [
+        125,
+        125
+      ],
+      "footprintDam": [
+        0.25,
+        0.25
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 405,
+        "heightPx": 339,
+        "contentRectPx": [
+          16,
+          16,
+          373,
+          307
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-04",
+      "key": "glacier",
+      "reviewName": "Sông băng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/glacier.png",
+      "footprintMeters": [
+        1000,
+        2500
+      ],
+      "footprintDam": [
+        2,
+        5
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 376,
+        "heightPx": 409,
+        "contentRectPx": [
+          16,
+          16,
+          344,
+          377
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-05",
+      "key": "river_lake_join",
+      "reviewName": "Nối sông – hồ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_lake_join.png",
+      "footprintMeters": [
+        500,
+        500
+      ],
+      "footprintDam": [
+        1,
+        1
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 404,
+        "heightPx": 409,
+        "contentRectPx": [
+          16,
+          16,
+          372,
+          377
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-06",
+      "key": "river_sea_join",
+      "reviewName": "Nối sông – biển",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/river_sea_join.png",
+      "footprintMeters": [
+        1000,
+        750
+      ],
+      "footprintDam": [
+        2,
+        1.5
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 416,
+        "heightPx": 397,
+        "contentRectPx": [
+          16,
+          16,
+          384,
+          365
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-07",
+      "key": "lake_frozen",
+      "reviewName": "Hồ băng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/lake_frozen.png",
+      "footprintMeters": [
+        600,
+        500
+      ],
+      "footprintDam": [
+        1.2,
+        1
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 420,
+        "heightPx": 392,
+        "contentRectPx": [
+          16,
+          16,
+          388,
+          360
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-08",
+      "key": "sea_frozen",
+      "reviewName": "Biển băng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/sea_frozen.png",
+      "footprintMeters": [
+        1000,
+        1000
+      ],
+      "footprintDam": [
+        2,
+        2
+      ],
+      "heightMeters": 1,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 454,
+        "heightPx": 405,
+        "contentRectPx": [
+          17,
+          17,
+          420,
+          371
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "14-waters-09",
+      "key": "spirit_spring",
+      "reviewName": "Linh tuyền",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/spirit_spring.png",
+      "footprintMeters": [
+        50,
+        50
+      ],
+      "footprintDam": [
+        0.1,
+        0.1
+      ],
+      "heightMeters": 3,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 421,
+        "heightPx": 391,
+        "contentRectPx": [
+          16,
+          16,
+          389,
+          359
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-01",
+      "key": "abyss_bottomless",
+      "reviewName": "Vực thẳm không đáy",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/abyss_bottomless.png",
+      "footprintMeters": [
+        10000,
+        2000
+      ],
+      "footprintDam": [
+        20,
+        4
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 458,
+        "heightPx": 374,
+        "contentRectPx": [
+          17,
+          17,
+          424,
+          340
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-02",
+      "key": "sinkhole",
+      "reviewName": "Hố trời",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/sinkhole.png",
+      "footprintMeters": [
+        1500,
+        1500
+      ],
+      "footprintDam": [
+        3,
+        3
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 483,
+        "heightPx": 352,
+        "contentRectPx": [
+          18,
+          18,
+          447,
+          316
+        ],
+        "paddingPx": 18,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-03",
+      "key": "mountain_cloud_piercing",
+      "reviewName": "Núi chọc trời",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/mountain_cloud_piercing.png",
+      "footprintMeters": [
+        5000,
+        5000
+      ],
+      "footprintDam": [
+        10,
+        10
+      ],
+      "heightMeters": 12000,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 464,
+        "heightPx": 398,
+        "contentRectPx": [
+          18,
+          18,
+          428,
+          362
+        ],
+        "paddingPx": 18,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-04",
+      "key": "volcano",
+      "reviewName": "Núi lửa",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/volcano.png",
+      "footprintMeters": [
+        4000,
+        3000
+      ],
+      "footprintDam": [
+        8,
+        6
+      ],
+      "heightMeters": 3200,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 483,
+        "heightPx": 364,
+        "contentRectPx": [
+          18,
+          18,
+          447,
+          328
+        ],
+        "paddingPx": 18,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-05",
+      "key": "mountain_forested",
+      "reviewName": "Núi phủ rừng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/mountain_forested.png",
+      "footprintMeters": [
+        3000,
+        2500
+      ],
+      "footprintDam": [
+        6,
+        5
+      ],
+      "heightMeters": 2400,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 495,
+        "heightPx": 356,
+        "contentRectPx": [
+          19,
+          19,
+          457,
+          318
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-07",
+      "key": "rock_small",
+      "reviewName": "Mỏm đá nhỏ",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/rock_small.png",
+      "footprintMeters": [
+        8,
+        6
+      ],
+      "footprintDam": [
+        0.016,
+        0.012
+      ],
+      "heightMeters": 4,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 356,
+        "heightPx": 199,
+        "contentRectPx": [
+          16,
+          16,
+          324,
+          167
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "15-grand-terrain-09",
+      "key": "hill_forested",
+      "reviewName": "Đồi phủ rừng",
+      "role": "terrain",
+      "path": "assets/images/map/terrain/hill_forested.png",
+      "footprintMeters": [
+        1000,
+        750
+      ],
+      "footprintDam": [
+        2,
+        1.5
+      ],
+      "heightMeters": 140,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 490,
+        "heightPx": 281,
+        "contentRectPx": [
+          19,
+          19,
+          452,
+          243
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-01",
+      "key": "sect_small",
+      "reviewName": "Tiểu tông môn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect_small.png",
+      "footprintMeters": [
+        300,
+        250
+      ],
+      "footprintDam": [
+        0.6,
+        0.5
+      ],
+      "heightMeters": 85,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 518,
+        "heightPx": 372,
+        "contentRectPx": [
+          20,
+          20,
+          478,
+          332
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-02",
+      "key": "sect",
+      "reviewName": "Tông môn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect.png",
+      "footprintMeters": [
+        900,
+        700
+      ],
+      "footprintDam": [
+        1.8,
+        1.4
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 506,
+        "heightPx": 376,
+        "contentRectPx": [
+          19,
+          19,
+          468,
+          338
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-03",
+      "key": "monastery",
+      "reviewName": "Chùa",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/monastery.png",
+      "footprintMeters": [
+        250,
+        200
+      ],
+      "footprintDam": [
+        0.5,
+        0.4
+      ],
+      "heightMeters": 85,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 529,
+        "heightPx": 348,
+        "contentRectPx": [
+          20,
+          20,
+          489,
+          308
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-04",
+      "key": "fortified_pass",
+      "reviewName": "Quan ải tường đá",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/fortified_pass.png",
+      "footprintMeters": [
+        120,
+        80
+      ],
+      "footprintDam": [
+        0.24,
+        0.16
+      ],
+      "heightMeters": 35,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 535,
+        "heightPx": 371,
+        "contentRectPx": [
+          20,
+          20,
+          495,
+          331
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-05",
+      "key": "courtyard_residence",
+      "reviewName": "Đại trạch sân viện",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/courtyard_residence.png",
+      "footprintMeters": [
+        75,
+        60
+      ],
+      "footprintDam": [
+        0.15,
+        0.12
+      ],
+      "heightMeters": 20,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 527,
+        "heightPx": 359,
+        "contentRectPx": [
+          20,
+          20,
+          487,
+          319
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-06",
+      "key": "house_three_storey",
+      "reviewName": "Nhà ba tầng",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/house_three_storey.png",
+      "footprintMeters": [
+        40,
+        32
+      ],
+      "footprintDam": [
+        0.08,
+        0.064
+      ],
+      "heightMeters": 16,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 457,
+        "heightPx": 360,
+        "contentRectPx": [
+          17,
+          17,
+          423,
+          326
+        ],
+        "paddingPx": 17,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-07",
+      "key": "house_five_storey",
+      "reviewName": "Nhà năm tầng",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/house_five_storey.png",
+      "footprintMeters": [
+        45,
+        36
+      ],
+      "footprintDam": [
+        0.09,
+        0.072
+      ],
+      "heightMeters": 25,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 428,
+        "heightPx": 373,
+        "contentRectPx": [
+          16,
+          16,
+          396,
+          341
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-08",
+      "key": "alchemy_workshop",
+      "reviewName": "Đan phường",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/alchemy_workshop.png",
+      "footprintMeters": [
+        75,
+        60
+      ],
+      "footprintDam": [
+        0.15,
+        0.12
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1453,
+        "heightPx": 1104,
+        "contentRectPx": [
+          54,
+          54,
+          1345,
+          996
+        ],
+        "paddingPx": 54,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "20-sects-structures-09",
+      "key": "observatory",
+      "reviewName": "Đài quan tinh",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/observatory.png",
+      "footprintMeters": [
+        100,
+        100
+      ],
+      "footprintDam": [
+        0.2,
+        0.2
+      ],
+      "heightMeters": 45,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 476,
+        "heightPx": 377,
+        "contentRectPx": [
+          18,
+          18,
+          440,
+          341
+        ],
+        "paddingPx": 18,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "28-great-sect",
+      "key": "sect_great",
+      "reviewName": "Đại tông môn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect_great.png",
+      "footprintMeters": [
+        2400,
+        1800
+      ],
+      "footprintDam": [
+        4.8,
+        3.6
+      ],
+      "heightMeters": 380,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1560,
+        "heightPx": 1181,
+        "contentRectPx": [
+          58,
+          58,
+          1444,
+          1065
+        ],
+        "paddingPx": 58,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "32-grand-buddhist-temple",
+      "key": "grand_buddhist_monastery",
+      "reviewName": "Đại Phật Tự",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/grand_buddhist_monastery.png",
+      "footprintMeters": [
+        675,
+        520
+      ],
+      "footprintDam": [
+        1.35,
+        1.04
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1544,
+        "heightPx": 1217,
+        "contentRectPx": [
+          58,
+          58,
+          1428,
+          1101
+        ],
+        "paddingPx": 58,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "21-holy-wood",
+      "key": "holy_land_wood",
+      "reviewName": "Thánh địa Mộc",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/holy_land_wood.png",
+      "footprintMeters": [
+        30000,
+        30000
+      ],
+      "footprintDam": [
+        60,
+        60
+      ],
+      "heightMeters": null,
+      "unique": true,
+      "scaleStatus": "territory-approved-component-calibration-pending",
+      "scaleBasis": "Giữ phạm vi thánh địa 30 × 30 km đã duyệt. Tranh tổng quan diễn tả công trình huyền ảo khổng lồ; nhà/cây thông thường khi dựng map phải dùng lớp có kích thước riêng. Tranh chưa phải phép đo từng chi tiết nội bộ.",
+      "image": {
+        "widthPx": 1331,
+        "heightPx": 1301,
+        "contentRectPx": [
+          50,
+          50,
+          1231,
+          1201
+        ],
+        "paddingPx": 50,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1,
+      "allowSnowVariant": false
+    },
+    {
+      "id": "22-holy-metal",
+      "key": "holy_land_metal",
+      "reviewName": "Thánh địa Kim",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/holy_land_metal.png",
+      "footprintMeters": [
+        30000,
+        30000
+      ],
+      "footprintDam": [
+        60,
+        60
+      ],
+      "heightMeters": null,
+      "unique": true,
+      "scaleStatus": "territory-approved-component-calibration-pending",
+      "scaleBasis": "Giữ phạm vi thánh địa 30 × 30 km đã duyệt. Tranh tổng quan diễn tả công trình huyền ảo khổng lồ; nhà/cây thông thường khi dựng map phải dùng lớp có kích thước riêng. Tranh chưa phải phép đo từng chi tiết nội bộ.",
+      "image": {
+        "widthPx": 1322,
+        "heightPx": 1315,
+        "contentRectPx": [
+          49,
+          49,
+          1224,
+          1217
+        ],
+        "paddingPx": 49,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1,
+      "allowSnowVariant": false
+    },
+    {
+      "id": "23-holy-water",
+      "key": "holy_land_water",
+      "reviewName": "Thánh địa Thủy",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/holy_land_water.png",
+      "footprintMeters": [
+        30000,
+        30000
+      ],
+      "footprintDam": [
+        60,
+        60
+      ],
+      "heightMeters": null,
+      "unique": true,
+      "scaleStatus": "territory-approved-component-calibration-pending",
+      "scaleBasis": "Giữ phạm vi thánh địa 30 × 30 km đã duyệt. Tranh tổng quan diễn tả công trình huyền ảo khổng lồ; nhà/cây thông thường khi dựng map phải dùng lớp có kích thước riêng. Tranh chưa phải phép đo từng chi tiết nội bộ.",
+      "image": {
+        "widthPx": 1332,
+        "heightPx": 1240,
+        "contentRectPx": [
+          50,
+          50,
+          1232,
+          1140
+        ],
+        "paddingPx": 50,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1,
+      "allowSnowVariant": false
+    },
+    {
+      "id": "24-holy-fire",
+      "key": "holy_land_fire",
+      "reviewName": "Thánh địa Hỏa",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/holy_land_fire.png",
+      "footprintMeters": [
+        30000,
+        30000
+      ],
+      "footprintDam": [
+        60,
+        60
+      ],
+      "heightMeters": null,
+      "unique": true,
+      "scaleStatus": "territory-approved-component-calibration-pending",
+      "scaleBasis": "Giữ phạm vi thánh địa 30 × 30 km đã duyệt. Tranh tổng quan diễn tả công trình huyền ảo khổng lồ; nhà/cây thông thường khi dựng map phải dùng lớp có kích thước riêng. Tranh chưa phải phép đo từng chi tiết nội bộ.",
+      "image": {
+        "widthPx": 1328,
+        "heightPx": 1260,
+        "contentRectPx": [
+          50,
+          50,
+          1228,
+          1160
+        ],
+        "paddingPx": 50,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1,
+      "allowSnowVariant": false
+    },
+    {
+      "id": "25-holy-earth",
+      "key": "holy_land_earth",
+      "reviewName": "Thánh địa Thổ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/holy_land_earth.png",
+      "footprintMeters": [
+        30000,
+        30000
+      ],
+      "footprintDam": [
+        60,
+        60
+      ],
+      "heightMeters": null,
+      "unique": true,
+      "scaleStatus": "territory-approved-component-calibration-pending",
+      "scaleBasis": "Giữ phạm vi thánh địa 30 × 30 km đã duyệt. Tranh tổng quan diễn tả công trình huyền ảo khổng lồ; nhà/cây thông thường khi dựng map phải dùng lớp có kích thước riêng. Tranh chưa phải phép đo từng chi tiết nội bộ.",
+      "image": {
+        "widthPx": 1356,
+        "heightPx": 1347,
+        "contentRectPx": [
+          51,
+          51,
+          1254,
+          1245
+        ],
+        "paddingPx": 51,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "maxWorldInstances": 1,
+      "allowSnowVariant": false
+    },
+    {
+      "id": "08-settlements-01-snow",
+      "key": "hamlet_snow",
+      "reviewName": "Thôn nhỏ · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/hamlet_snow.png",
+      "footprintMeters": [
+        65,
+        50
+      ],
+      "footprintDam": [
+        0.13,
+        0.1
+      ],
+      "heightMeters": 7,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 394,
+        "heightPx": 383,
+        "contentRectPx": [
+          16,
+          16,
+          362,
+          351
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-01",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-02-snow",
+      "key": "village_snow",
+      "reviewName": "Làng · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/village_snow.png",
+      "footprintMeters": [
+        150,
+        115
+      ],
+      "footprintDam": [
+        0.3,
+        0.23
+      ],
+      "heightMeters": 9,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 394,
+        "heightPx": 322,
+        "contentRectPx": [
+          16,
+          16,
+          362,
+          290
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-02",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-03-snow",
+      "key": "town_snow",
+      "reviewName": "Thị trấn · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/town_snow.png",
+      "footprintMeters": [
+        320,
+        260
+      ],
+      "footprintDam": [
+        0.64,
+        0.52
+      ],
+      "heightMeters": 16,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 395,
+        "heightPx": 350,
+        "contentRectPx": [
+          16,
+          16,
+          363,
+          318
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-03",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-04-snow",
+      "key": "county_city_snow",
+      "reviewName": "Thành huyện · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/county_city_snow.png",
+      "footprintMeters": [
+        800,
+        700
+      ],
+      "footprintDam": [
+        1.6,
+        1.4
+      ],
+      "heightMeters": 60,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 397,
+        "heightPx": 358,
+        "contentRectPx": [
+          16,
+          16,
+          365,
+          326
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-04",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-05-snow",
+      "key": "capital_city_snow",
+      "reviewName": "Kinh đô · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/capital_city_snow.png",
+      "footprintMeters": [
+        2400,
+        2100
+      ],
+      "footprintDam": [
+        4.8,
+        4.2
+      ],
+      "heightMeters": 240,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1356,
+        "heightPx": 1341,
+        "contentRectPx": [
+          51,
+          51,
+          1254,
+          1239
+        ],
+        "paddingPx": 51,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-05",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-06-snow",
+      "key": "martial_school_snow",
+      "reviewName": "Võ quán · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/martial_school_snow.png",
+      "footprintMeters": [
+        110,
+        90
+      ],
+      "footprintDam": [
+        0.22,
+        0.18
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 396,
+        "heightPx": 329,
+        "contentRectPx": [
+          16,
+          16,
+          364,
+          297
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-06",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-07-snow",
+      "key": "shrine_snow",
+      "reviewName": "Miếu · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/shrine_snow.png",
+      "footprintMeters": [
+        45,
+        35
+      ],
+      "footprintDam": [
+        0.09,
+        0.07
+      ],
+      "heightMeters": 12,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 395,
+        "heightPx": 332,
+        "contentRectPx": [
+          16,
+          16,
+          363,
+          300
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-07",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-08-snow",
+      "key": "watchtower_snow",
+      "reviewName": "Tháp canh · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/watchtower_snow.png",
+      "footprintMeters": [
+        20,
+        20
+      ],
+      "footprintDam": [
+        0.04,
+        0.04
+      ],
+      "heightMeters": 18,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 403,
+        "heightPx": 244,
+        "contentRectPx": [
+          16,
+          16,
+          371,
+          212
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-08",
+      "season": "snow"
+    },
+    {
+      "id": "08-settlements-09-snow",
+      "key": "inn_snow",
+      "reviewName": "Quán trọ · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/inn_snow.png",
+      "footprintMeters": [
+        70,
+        50
+      ],
+      "footprintDam": [
+        0.14,
+        0.1
+      ],
+      "heightMeters": 14,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 396,
+        "heightPx": 258,
+        "contentRectPx": [
+          16,
+          16,
+          364,
+          226
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "08-settlements-09",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-01-snow",
+      "key": "sect_small_snow",
+      "reviewName": "Tiểu tông môn · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect_small_snow.png",
+      "footprintMeters": [
+        300,
+        250
+      ],
+      "footprintDam": [
+        0.6,
+        0.5
+      ],
+      "heightMeters": 85,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 505,
+        "heightPx": 374,
+        "contentRectPx": [
+          19,
+          19,
+          467,
+          336
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-01",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-02-snow",
+      "key": "sect_snow",
+      "reviewName": "Tông môn · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect_snow.png",
+      "footprintMeters": [
+        900,
+        700
+      ],
+      "footprintDam": [
+        1.8,
+        1.4
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 509,
+        "heightPx": 379,
+        "contentRectPx": [
+          19,
+          19,
+          471,
+          341
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-02",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-03-snow",
+      "key": "monastery_snow",
+      "reviewName": "Chùa · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/monastery_snow.png",
+      "footprintMeters": [
+        250,
+        200
+      ],
+      "footprintDam": [
+        0.5,
+        0.4
+      ],
+      "heightMeters": 85,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 512,
+        "heightPx": 366,
+        "contentRectPx": [
+          19,
+          19,
+          474,
+          328
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-03",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-04-snow",
+      "key": "fortified_pass_snow",
+      "reviewName": "Quan ải tường đá · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/fortified_pass_snow.png",
+      "footprintMeters": [
+        120,
+        80
+      ],
+      "footprintDam": [
+        0.24,
+        0.16
+      ],
+      "heightMeters": 35,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 523,
+        "heightPx": 382,
+        "contentRectPx": [
+          20,
+          20,
+          483,
+          342
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-04",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-05-snow",
+      "key": "courtyard_residence_snow",
+      "reviewName": "Đại trạch sân viện · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/courtyard_residence_snow.png",
+      "footprintMeters": [
+        75,
+        60
+      ],
+      "footprintDam": [
+        0.15,
+        0.12
+      ],
+      "heightMeters": 20,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 534,
+        "heightPx": 364,
+        "contentRectPx": [
+          20,
+          20,
+          494,
+          324
+        ],
+        "paddingPx": 20,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-05",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-06-snow",
+      "key": "house_three_storey_snow",
+      "reviewName": "Nhà ba tầng · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/house_three_storey_snow.png",
+      "footprintMeters": [
+        40,
+        32
+      ],
+      "footprintDam": [
+        0.08,
+        0.064
+      ],
+      "heightMeters": 16,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 489,
+        "heightPx": 370,
+        "contentRectPx": [
+          19,
+          19,
+          451,
+          332
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-06",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-07-snow",
+      "key": "house_five_storey_snow",
+      "reviewName": "Nhà năm tầng · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/house_five_storey_snow.png",
+      "footprintMeters": [
+        45,
+        36
+      ],
+      "footprintDam": [
+        0.09,
+        0.072
+      ],
+      "heightMeters": 25,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 499,
+        "heightPx": 379,
+        "contentRectPx": [
+          19,
+          19,
+          461,
+          341
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-07",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-08-snow",
+      "key": "alchemy_workshop_snow",
+      "reviewName": "Đan phường · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/alchemy_workshop_snow.png",
+      "footprintMeters": [
+        75,
+        60
+      ],
+      "footprintDam": [
+        0.15,
+        0.12
+      ],
+      "heightMeters": 22,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1453,
+        "heightPx": 1086,
+        "contentRectPx": [
+          54,
+          54,
+          1345,
+          978
+        ],
+        "paddingPx": 54,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-08",
+      "season": "snow"
+    },
+    {
+      "id": "20-sects-structures-09-snow",
+      "key": "observatory_snow",
+      "reviewName": "Đài quan tinh · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/observatory_snow.png",
+      "footprintMeters": [
+        100,
+        100
+      ],
+      "footprintDam": [
+        0.2,
+        0.2
+      ],
+      "heightMeters": 45,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 489,
+        "heightPx": 379,
+        "contentRectPx": [
+          19,
+          19,
+          451,
+          341
+        ],
+        "paddingPx": 19,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "20-sects-structures-09",
+      "season": "snow"
+    },
+    {
+      "id": "28-great-sect-snow",
+      "key": "sect_great_snow",
+      "reviewName": "Đại tông môn · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/sect_great_snow.png",
+      "footprintMeters": [
+        2400,
+        1800
+      ],
+      "footprintDam": [
+        4.8,
+        3.6
+      ],
+      "heightMeters": 380,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1558,
+        "heightPx": 1193,
+        "contentRectPx": [
+          58,
+          58,
+          1442,
+          1077
+        ],
+        "paddingPx": 58,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "28-great-sect",
+      "season": "snow"
+    },
+    {
+      "id": "32-grand-buddhist-temple-snow",
+      "key": "grand_buddhist_monastery_snow",
+      "reviewName": "Đại Phật Tự · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/grand_buddhist_monastery_snow.png",
+      "footprintMeters": [
+        675,
+        520
+      ],
+      "footprintDam": [
+        1.35,
+        1.04
+      ],
+      "heightMeters": 180,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1545,
+        "heightPx": 1217,
+        "contentRectPx": [
+          58,
+          58,
+          1429,
+          1101
+        ],
+        "paddingPx": 58,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "32-grand-buddhist-temple",
+      "season": "snow"
+    },
+    {
+      "id": "33-small-cultivation-abode-snow",
+      "key": "cultivation_abode_small_snow",
+      "reviewName": "Động phủ nhỏ · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/cultivation_abode_small_snow.png",
+      "footprintMeters": [
+        40,
+        30
+      ],
+      "footprintDam": [
+        0.08,
+        0.06
+      ],
+      "heightMeters": 15,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1258,
+        "heightPx": 1118,
+        "contentRectPx": [
+          47,
+          47,
+          1164,
+          1024
+        ],
+        "paddingPx": 47,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "33-small-cultivation-abode",
+      "season": "snow"
+    },
+    {
+      "id": "34-large-cultivation-abode-snow",
+      "key": "cultivation_abode_large_snow",
+      "reviewName": "Động phủ lớn · tuyết",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/cultivation_abode_large_snow.png",
+      "footprintMeters": [
+        120,
+        90
+      ],
+      "footprintDam": [
+        0.24,
+        0.18
+      ],
+      "heightMeters": 35,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1397,
+        "heightPx": 1190,
+        "contentRectPx": [
+          52,
+          52,
+          1293,
+          1086
+        ],
+        "paddingPx": 52,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      },
+      "variantOf": "34-large-cultivation-abode",
+      "season": "snow"
+    },
+    {
+      "id": "33-small-cultivation-abode",
+      "key": "cultivation_abode_small",
+      "reviewName": "Động phủ nhỏ",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/cultivation_abode_small.png",
+      "footprintMeters": [
+        40,
+        30
+      ],
+      "footprintDam": [
+        0.08,
+        0.06
+      ],
+      "heightMeters": 15,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1255,
+        "heightPx": 1090,
+        "contentRectPx": [
+          47,
+          47,
+          1161,
+          996
+        ],
+        "paddingPx": 47,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "34-large-cultivation-abode",
+      "key": "cultivation_abode_large",
+      "reviewName": "Động phủ lớn",
+      "role": "landmarks",
+      "path": "assets/images/map/landmarks/cultivation_abode_large.png",
+      "footprintMeters": [
+        120,
+        90
+      ],
+      "footprintDam": [
+        0.24,
+        0.18
+      ],
+      "heightMeters": 35,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Khuôn viên tính từ kích thước nhà, sân/đường và khoảng trống; chiều cao tách riêng khỏi diện tích chiếm đất.",
+      "image": {
+        "widthPx": 1395,
+        "heightPx": 1190,
+        "contentRectPx": [
+          52,
+          52,
+          1291,
+          1086
+        ],
+        "paddingPx": 52,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          1.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_straight",
+      "key": "road_straight",
+      "reviewName": "road_straight",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_straight.png",
+      "footprintMeters": [
+        8,
+        48
+      ],
+      "footprintDam": [
+        0.016,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 95,
+        "heightPx": 359,
+        "contentRectPx": [
+          16,
+          16,
+          63,
+          327
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_curve",
+      "key": "road_curve",
+      "reviewName": "road_curve",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_curve.png",
+      "footprintMeters": [
+        24,
+        48
+      ],
+      "footprintDam": [
+        0.048,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 140,
+        "heightPx": 362,
+        "contentRectPx": [
+          16,
+          16,
+          108,
+          330
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_corner",
+      "key": "road_corner",
+      "reviewName": "road_corner",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_corner.png",
+      "footprintMeters": [
+        40,
+        40
+      ],
+      "footprintDam": [
+        0.08,
+        0.08
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 259,
+        "heightPx": 258,
+        "contentRectPx": [
+          16,
+          16,
+          227,
+          226
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_junction_t",
+      "key": "road_junction_t",
+      "reviewName": "road_junction_t",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_junction_t.png",
+      "footprintMeters": [
+        48,
+        44
+      ],
+      "footprintDam": [
+        0.096,
+        0.088
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 338,
+        "heightPx": 222,
+        "contentRectPx": [
+          16,
+          16,
+          306,
+          190
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_junction_y",
+      "key": "road_junction_y",
+      "reviewName": "road_junction_y",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_junction_y.png",
+      "footprintMeters": [
+        48,
+        44
+      ],
+      "footprintDam": [
+        0.096,
+        0.088
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 300,
+        "heightPx": 311,
+        "contentRectPx": [
+          16,
+          16,
+          268,
+          279
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_crossroads",
+      "key": "road_crossroads",
+      "reviewName": "road_crossroads",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_crossroads.png",
+      "footprintMeters": [
+        48,
+        48
+      ],
+      "footprintDam": [
+        0.096,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 348,
+        "heightPx": 336,
+        "contentRectPx": [
+          16,
+          16,
+          316,
+          304
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "bridge_wood",
+      "key": "bridge_wood",
+      "reviewName": "bridge_wood",
+      "role": "roads",
+      "path": "assets/images/map/roads/bridge_wood.png",
+      "footprintMeters": [
+        14,
+        48
+      ],
+      "footprintDam": [
+        0.028,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 119,
+        "heightPx": 347,
+        "contentRectPx": [
+          16,
+          16,
+          87,
+          315
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "bridge_stone",
+      "key": "bridge_stone",
+      "reviewName": "bridge_stone",
+      "role": "roads",
+      "path": "assets/images/map/roads/bridge_stone.png",
+      "footprintMeters": [
+        16,
+        48
+      ],
+      "footprintDam": [
+        0.032,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 120,
+        "heightPx": 350,
+        "contentRectPx": [
+          16,
+          16,
+          88,
+          318
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    },
+    {
+      "id": "road_switchback",
+      "key": "road_switchback",
+      "reviewName": "road_switchback",
+      "role": "roads",
+      "path": "assets/images/map/roads/road_switchback.png",
+      "footprintMeters": [
+        48,
+        48
+      ],
+      "footprintDam": [
+        0.096,
+        0.096
+      ],
+      "heightMeters": null,
+      "unique": false,
+      "scaleStatus": "design-calibrated-pending-layout",
+      "scaleBasis": "Mảnh quan lộ đã duyệt; mặt đường khoảng 8 m, căn khít các đầu nối và điểm vượt nước khi dựng tuyến.",
+      "image": {
+        "widthPx": 293,
+        "heightPx": 352,
+        "contentRectPx": [
+          16,
+          16,
+          261,
+          320
+        ],
+        "paddingPx": 16,
+        "opaque": false,
+        "groundAnchorNormalized": [
+          0.0,
+          1.0
+        ],
+        "anchorStatus": "provisional-pending-layout",
+        "nativeResolutionPreserved": true
+      }
+    }
+  ]
+}
