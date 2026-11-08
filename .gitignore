@@ -47,12 +47,17 @@ app.*.map.json
 # Widget Preview related
 .widget_preview/
 
-# Local workflow, art previews, and handoff archives
-/README.md
+# Local AI workflow and handoff outputs
 /AGENTS.md
 /readmeme.txt
 /FOLDER_STRUCTURE.md
 /create_structure.ps1
+/docs/workflow/
 /art_previews/
+/.workflow-staging-*/
 /*.zip
-/docs/design/
+
+# Existing private design decisions (do not ignore all docs/design)
+/docs/design/regional-map.md
+/docs/design/travel.md
+/docs/design/map-art.md
