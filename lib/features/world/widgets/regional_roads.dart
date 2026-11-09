@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -15,6 +16,7 @@ class RegionalRoads extends StatefulWidget {
 
 class _RegionalRoadsState extends State<RegionalRoads> {
   static const _roadAsset = 'assets/images/map/roads/road_straight.png';
+  static const _surfaceKey = 'roadSurface';
   late final Future<Map<String, ui.Image>> _loading = _loadImages();
   final _images = <String, ui.Image>{};
 
@@ -34,6 +36,20 @@ class _RegionalRoadsState extends State<RegionalRoads> {
         } finally {
           codec.dispose();
         }
+      }
+      final road = images[_roadAsset]!;
+      final recorder = ui.PictureRecorder();
+      Canvas(recorder).drawImageRect(
+        road,
+        Rect.fromLTWH(road.width * .4, 48, road.width * .2, road.height - 96.0),
+        const Rect.fromLTWH(0, 0, 24, 96),
+        Paint()..filterQuality = FilterQuality.medium,
+      );
+      final picture = recorder.endRecording();
+      try {
+        images[_surfaceKey] = await picture.toImage(24, 96);
+      } finally {
+        picture.dispose();
       }
     } catch (_) {
       for (final image in images.values) {
@@ -70,7 +86,7 @@ class _RegionalRoadsState extends State<RegionalRoads> {
         if (images == null || images.isEmpty) return const SizedBox.shrink();
         return RepaintBoundary(
           child: CustomPaint(
-            painter: _RoadPainter(images, images[_roadAsset]!),
+            painter: RegionalRoadPainter(images, images[_surfaceKey]!),
           ),
         );
       },
@@ -78,49 +94,98 @@ class _RegionalRoadsState extends State<RegionalRoads> {
   }
 }
 
-class _RoadPainter extends CustomPainter {
-  const _RoadPainter(this.images, this.road);
+class RegionalRoadPainter extends CustomPainter {
+  const RegionalRoadPainter(this.images, this.surface);
 
   final Map<String, ui.Image> images;
-  final ui.Image road;
+  final ui.Image surface;
 
   @override
   void paint(Canvas canvas, Size size) {
     const reference = Size(1672, 941);
-    final brush = Paint()..filterQuality = FilterQuality.medium;
-    canvas.save();
-    canvas.scale(size.width / reference.width, size.height / reference.height);
+    final roads = Path();
     for (final trail in regionalTrails) {
       final points = [
         trail.from.position,
         ...trail.waypoints,
         trail.to.position,
       ];
-      final path = Path()
-        ..moveTo(
-          points.first.dx * reference.width,
-          points.first.dy * reference.height,
-        );
+      roads.moveTo(
+        points.first.dx * reference.width,
+        points.first.dy * reference.height,
+      );
       for (final point in points.skip(1)) {
-        path.lineTo(point.dx * reference.width, point.dy * reference.height);
-      }
-      for (final metric in path.computeMetrics()) {
-        for (var distance = 0.0; distance < metric.length; distance += 3) {
-          final tangent = metric.getTangentForOffset(distance)!;
-          final sourceY = 24 + (distance * 2) % (road.height - 72);
-          canvas.save();
-          canvas.translate(tangent.position.dx, tangent.position.dy);
-          canvas.rotate(tangent.angle - math.pi / 2);
-          canvas.drawImageRect(
-            road,
-            Rect.fromLTWH(0, sourceY, road.width.toDouble(), 24),
-            const Rect.fromLTWH(-3.75, -3, 7.5, 6),
-            brush,
-          );
-          canvas.restore();
-        }
+        roads.lineTo(point.dx * reference.width, point.dy * reference.height);
       }
     }
+    var land = Path()..addRect(Offset.zero & reference);
+    for (final bridge in regionalBridges) {
+      final image = images[bridge.asset]!;
+      final width = bridge.length * image.width / image.height;
+      final cosine = math.cos(bridge.rotation);
+      final sine = math.sin(bridge.rotation);
+      final center = Offset(
+        bridge.position.dx * reference.width,
+        bridge.position.dy * reference.height,
+      );
+      final local = Rect.fromLTRB(
+        -width / 2,
+        bridge.length * (bridge.deckStart - .5),
+        width / 2,
+        bridge.length * (bridge.deckEnd - .5),
+      );
+      final deck = Path()
+        ..addPolygon([
+          for (final point in [
+            local.topLeft,
+            local.topRight,
+            local.bottomRight,
+            local.bottomLeft,
+          ])
+            center +
+                Offset(
+                  cosine * point.dx - sine * point.dy,
+                  sine * point.dx + cosine * point.dy,
+                ),
+        ], true);
+      land = Path.combine(PathOperation.difference, land, deck);
+    }
+    final roadPaint = Paint()
+      ..shader = ui.ImageShader(
+        surface,
+        TileMode.repeated,
+        TileMode.repeated,
+        Float64List.fromList([
+          .15,
+          0,
+          0,
+          0,
+          0,
+          .15,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]),
+      )
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 4.2
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..filterQuality = FilterQuality.medium;
+    canvas.save();
+    canvas.scale(size.width / reference.width, size.height / reference.height);
+    canvas.save();
+    canvas.clipPath(land);
+    canvas.drawPath(roads, roadPaint);
+    canvas.restore();
+    final brush = Paint()..filterQuality = FilterQuality.medium;
     for (final bridge in regionalBridges) {
       final image = images[bridge.asset]!;
       final width = bridge.length * image.width / image.height;
@@ -146,5 +211,6 @@ class _RoadPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_RoadPainter oldDelegate) => oldDelegate.images != images;
+  bool shouldRepaint(RegionalRoadPainter oldDelegate) =>
+      oldDelegate.images != images || oldDelegate.surface != surface;
 }

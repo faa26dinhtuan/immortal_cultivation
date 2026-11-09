@@ -174,8 +174,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -211,8 +211,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -248,8 +248,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -285,8 +285,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -322,8 +322,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -359,8 +359,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -396,8 +396,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -433,8 +433,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -470,8 +470,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -507,7 +507,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.502358,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -544,8 +544,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.514773,
+          0.833107
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -581,8 +581,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.503513,
+          0.863608
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -618,8 +618,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.496487,
+          0.905177
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -655,7 +655,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.504662,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -692,8 +692,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.504651,
+          0.833419
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -729,7 +729,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.492925,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -766,7 +766,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.501157,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -803,8 +803,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.487427,
+          0.965854
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -840,8 +840,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.476923,
+          0.908437
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -877,8 +877,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.566372,
+          0.915812
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -914,8 +914,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.48855,
+          0.960285
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -951,8 +951,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502262,
+          0.951388
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -988,8 +988,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502924,
+          0.925106
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1025,8 +1025,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.495238,
+          0.916031
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1062,8 +1062,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.521472,
+          0.92084
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1099,8 +1099,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.508532,
+          0.950732
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1136,8 +1136,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.51938,
+          0.920422
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1173,8 +1173,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.433249,
+          0.826352
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1210,8 +1210,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498891,
+          0.845609
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1247,8 +1247,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.536993,
+          0.83335
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1284,8 +1284,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.851086
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1321,8 +1321,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.851416
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1358,8 +1358,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.853573
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1395,8 +1395,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.851416
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1432,8 +1432,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.886728
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1469,8 +1469,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.919319
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1506,8 +1506,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.38255,
+          0.798978
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1543,8 +1543,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.456072,
+          0.8427
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1580,7 +1580,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.372308,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1617,8 +1617,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.460808,
+          0.850559
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1654,8 +1654,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.519406,
+          0.971948
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1691,7 +1691,7 @@
         "paddingPx": 43,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.499138,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1728,7 +1728,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.506053,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1765,7 +1765,7 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.482955,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1802,7 +1802,7 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.51954,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1839,8 +1839,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.52045,
+          0.857674
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1876,7 +1876,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.464539,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1913,7 +1913,7 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.5,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -1950,8 +1950,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.490476,
+          0.997411
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -1987,7 +1987,7 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.5,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2024,7 +2024,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.503529,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2061,7 +2061,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.497653,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2098,8 +2098,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.496212,
+          0.974873
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2135,7 +2135,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.534442,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2172,8 +2172,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.485788,
+          0.887673
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2209,8 +2209,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.522556,
+          0.899171
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2246,8 +2246,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.529412,
+          0.893159
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2283,7 +2283,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.443038,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2320,7 +2320,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.52399,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2357,11 +2357,26 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.492308,
+          0.544304
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "measured-current-png-pending-user-review",
+        "nativeResolutionPreserved": true,
+        "functionalAnchorsNormalized": {
+          "roadEntry": [
+            0.205128,
+            0.85443
+          ],
+          "shoreContact": [
+            0.492308,
+            0.544304
+          ],
+          "deckTip": [
+            0.830769,
+            0.174051
+          ]
+        },
+        "functionalAnchorBasis": "Native PNG grid inspected; route/shore endpoints trialed in connector-preview.png. Not a camera or full-map approval."
       }
     },
     {
@@ -2394,7 +2409,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.464455,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2431,8 +2446,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.541866,
+          0.898744
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2468,8 +2483,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.538278,
+          0.977187
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2505,8 +2520,8 @@
         "paddingPx": 48,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.501177,
+          0.915686
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2542,8 +2557,8 @@
         "paddingPx": 21,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499096,
+          0.903342
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2579,8 +2594,8 @@
         "paddingPx": 21,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.843011
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2616,7 +2631,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.520468,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2653,7 +2668,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.496575,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2690,8 +2705,8 @@
         "paddingPx": 48,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502315,
+          0.916098
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2727,8 +2742,8 @@
         "paddingPx": 49,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499622,
+          0.908538
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2764,8 +2779,8 @@
         "paddingPx": 51,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.862045
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2801,8 +2816,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.542169,
+          0.992987
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -2838,7 +2853,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.497872,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2875,7 +2890,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.503125,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2912,7 +2927,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.507645,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2949,7 +2964,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.491003,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -2986,7 +3001,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.507389,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3023,7 +3038,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.503817,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3060,7 +3075,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.487239,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3097,7 +3112,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.502392,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3134,7 +3149,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.505967,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3171,7 +3186,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.492386,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3208,7 +3223,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.51358,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3245,7 +3260,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.497573,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3282,8 +3297,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.492629,
+          0.93342
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3319,8 +3334,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.508152,
+          0.902904
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3356,8 +3371,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.529343,
+          0.987887
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3393,7 +3408,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.503713,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3430,7 +3445,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.50358,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3467,7 +3482,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.501208,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3504,7 +3519,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.469838,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3541,7 +3556,7 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.504405,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -3578,8 +3593,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.515116,
+          0.887314
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3615,8 +3630,8 @@
         "paddingPx": 21,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.935378
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3652,8 +3667,8 @@
         "paddingPx": 21,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.509191,
+          0.948439
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3689,8 +3704,8 @@
         "paddingPx": 22,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.508227,
+          0.886804
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3727,8 +3742,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3764,8 +3779,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3801,8 +3816,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3838,8 +3853,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3875,8 +3890,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3912,8 +3927,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3949,8 +3964,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -3986,8 +4001,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4023,8 +4038,8 @@
         "paddingPx": 0,
         "opaque": true,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.88
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4060,8 +4075,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.491979,
+          0.961636
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4097,8 +4112,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498652,
+          0.961106
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4134,8 +4149,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.497297,
+          0.943455
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4171,7 +4186,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.491979,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4208,7 +4223,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.50134,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4245,7 +4260,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.5,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4282,7 +4297,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.498652,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4319,7 +4334,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.497312,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4356,7 +4371,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.506702,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4393,7 +4408,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.493261,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4430,7 +4445,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.502688,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4467,7 +4482,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.5,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4504,8 +4519,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.480907,
+          0.860942
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4541,8 +4556,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.482838,
+          0.836269
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4578,8 +4593,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.521635,
+          0.859777
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4615,8 +4630,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.492665,
+          0.891304
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4652,8 +4667,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.482895,
+          0.968601
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4689,8 +4704,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.533105,
+          0.837975
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4726,8 +4741,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.447368,
+          0.918881
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4763,7 +4778,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.482249,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4800,8 +4815,8 @@
         "paddingPx": 21,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.512891,
+          0.942788
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4837,8 +4852,8 @@
         "paddingPx": 24,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.465947,
+          0.892651
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4874,8 +4889,8 @@
         "paddingPx": 25,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.503894,
+          0.856999
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -4911,7 +4926,7 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
+          0.370968,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4948,7 +4963,7 @@
         "paddingPx": 22,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.554899,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -4985,8 +5000,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.284452,
+          0.843627
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5022,8 +5037,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.460337,
+          0.903158
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5059,8 +5074,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.55679,
+          0.897345
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5096,8 +5111,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.488032,
+          0.931736
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5133,8 +5148,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.523515,
+          0.877946
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5170,8 +5185,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.542067,
+          0.929673
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5207,8 +5222,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.460714,
+          0.954592
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5244,8 +5259,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498899,
+          0.928889
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5281,8 +5296,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.538005,
+          0.954476
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5318,8 +5333,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.5131,
+          0.874866
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5355,8 +5370,8 @@
         "paddingPx": 18,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.514493,
+          0.88125
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5392,8 +5407,8 @@
         "paddingPx": 18,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.529095,
+          0.842211
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5429,8 +5444,8 @@
         "paddingPx": 18,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.494824,
+          0.86978
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5466,8 +5481,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.513131,
+          0.861236
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5503,8 +5518,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.44382,
+          0.920603
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5540,8 +5555,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.521429,
+          0.918149
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5577,8 +5592,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.532819,
+          0.838925
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5614,8 +5629,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.511858,
+          0.840638
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5651,8 +5666,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.508507,
+          0.873793
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5688,8 +5703,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.484112,
+          0.835472
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5725,8 +5740,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502846,
+          0.866184
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5762,8 +5777,8 @@
         "paddingPx": 17,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.49453,
+          0.869333
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5799,8 +5814,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.504673,
+          0.847399
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5836,8 +5851,8 @@
         "paddingPx": 54,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499656,
+          0.865145
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5873,8 +5888,8 @@
         "paddingPx": 18,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.518908,
+          0.843714
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5910,8 +5925,8 @@
         "paddingPx": 58,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.501282,
+          0.852396
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5947,8 +5962,8 @@
         "paddingPx": 58,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.84378
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -5984,8 +5999,8 @@
         "paddingPx": 50,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499624,
+          0.862813
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6023,8 +6038,8 @@
         "paddingPx": 49,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.862753
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6062,8 +6077,8 @@
         "paddingPx": 50,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.877032
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6101,8 +6116,8 @@
         "paddingPx": 50,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502259,
+          0.87819
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6140,8 +6155,8 @@
         "paddingPx": 51,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.857105
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6179,8 +6194,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502538,
+          0.921253
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6218,8 +6233,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502538,
+          0.993292
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6257,8 +6272,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498734,
+          0.953829
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6296,8 +6311,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498741,
+          0.940894
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6335,8 +6350,8 @@
         "paddingPx": 51,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.86094
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6374,8 +6389,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.987356
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6413,8 +6428,8 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.503797,
+          0.981446
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6452,7 +6467,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.501241,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -6491,7 +6506,7 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
+          0.502525,
           1.0
         ],
         "anchorStatus": "provisional-pending-layout",
@@ -6530,8 +6545,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.518812,
+          0.839786
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6569,8 +6584,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.51277,
+          0.8419
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6608,8 +6623,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.486328,
+          0.836284
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6647,8 +6662,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499044,
+          0.840209
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6686,8 +6701,8 @@
         "paddingPx": 20,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.509363,
+          0.857033
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6725,8 +6740,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.498978,
+          0.864757
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6764,8 +6779,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.448898,
+          0.8419
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6803,8 +6818,8 @@
         "paddingPx": 54,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.499656,
+          0.879484
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6842,8 +6857,8 @@
         "paddingPx": 19,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.511247,
+          0.8419
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6881,8 +6896,8 @@
         "paddingPx": 58,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.501926,
+          0.84969
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6920,8 +6935,8 @@
         "paddingPx": 58,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.84378
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6959,8 +6974,8 @@
         "paddingPx": 47,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.504769,
+          0.84805
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -6998,8 +7013,8 @@
         "paddingPx": 52,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.503221,
+          0.84679
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -7037,11 +7052,22 @@
         "paddingPx": 47,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.357769,
+          0.811009
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "measured-current-png-pending-user-review",
+        "nativeResolutionPreserved": true,
+        "functionalAnchorsNormalized": {
+          "roadEntry": [
+            0.151394,
+            0.923853
+          ],
+          "doorThreshold": [
+            0.486056,
+            0.559633
+          ]
+        },
+        "functionalAnchorBasis": "Native PNG grid inspected; route/shore endpoints trialed in connector-preview.png. Not a camera or full-map approval."
       }
     },
     {
@@ -7074,8 +7100,8 @@
         "paddingPx": 52,
         "opaque": false,
         "groundAnchorNormalized": [
-          1.0,
-          1.0
+          0.502509,
+          0.84679
         ],
         "anchorStatus": "provisional-pending-layout",
         "nativeResolutionPreserved": true
@@ -7111,11 +7137,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.846128
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7148,11 +7175,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.846409
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7185,11 +7213,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.832868
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7222,11 +7251,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.825225
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7259,11 +7289,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.8409
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7296,11 +7327,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.84381
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7333,11 +7365,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.844957
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7370,11 +7403,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.845257
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     },
     {
@@ -7407,11 +7441,12 @@
         "paddingPx": 16,
         "opaque": false,
         "groundAnchorNormalized": [
-          0.0,
-          1.0
+          0.5,
+          0.845455
         ],
-        "anchorStatus": "provisional-pending-layout",
-        "nativeResolutionPreserved": true
+        "anchorStatus": "provisional-visible-bounds-source-unavailable",
+        "nativeResolutionPreserved": true,
+        "anchorBasis": "Reference anchor mapped to current visible content bounds; original source archive unavailable; functional connectors still need measurement."
       }
     }
   ]

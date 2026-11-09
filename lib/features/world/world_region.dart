@@ -97,12 +97,16 @@ class RoadBridge {
     required this.asset,
     required this.rotation,
     required this.length,
+    required this.deckStart,
+    required this.deckEnd,
   });
 
   final Offset position;
   final String asset;
   final double rotation;
   final double length;
+  final double deckStart;
+  final double deckEnd;
 }
 
 const regionalBridges = [
@@ -111,12 +115,16 @@ const regionalBridges = [
     asset: 'assets/images/map/roads/bridge_wood.png',
     rotation: -.8,
     length: 38,
+    deckStart: 91 / 347,
+    deckEnd: 259 / 347,
   ),
   RoadBridge(
     position: Offset(.520, .717),
     asset: 'assets/images/map/roads/bridge_stone.png',
     rotation: 0,
     length: 44,
+    deckStart: 94 / 350,
+    deckEnd: 260 / 350,
   ),
 ];
 
