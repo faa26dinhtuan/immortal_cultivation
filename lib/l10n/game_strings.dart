@@ -141,8 +141,9 @@ abstract final class GameStrings {
 
   static String routeStep(WorldTrail step) {
     final terrain = switch (step.terrain) {
-      TrailTerrain.riverCrossing => 'vượt sông',
+      TrailTerrain.riverCrossing => 'qua cầu và đường núi',
       TrailTerrain.mountainPath => 'đường núi',
+      TrailTerrain.lowlandPath => 'đường đồng bằng',
     };
     return '${placeName(step.from)} → ${placeName(step.to)} · '
         '${step.hours} giờ · $terrain';

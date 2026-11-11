@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/game_theme.dart';
 import '../../../l10n/game_strings.dart';
 import '../world_region.dart';
-import 'regional_roads.dart';
 
 class RegionalMap extends StatelessWidget {
   const RegionalMap({
@@ -48,7 +47,7 @@ class _MapViewport extends StatefulWidget {
 }
 
 class _MapViewportState extends State<_MapViewport> {
-  static const _aspectRatio = 1672 / 941;
+  static const _aspectRatio = 2400 / 1400;
   static const _maxScale = 3.0;
   static const _zoomStep = 1.35;
 
@@ -139,7 +138,6 @@ class _MapViewportState extends State<_MapViewport> {
                   fit: BoxFit.cover,
                   semanticLabel: GameStrings.mapDescription,
                 ),
-                const IgnorePointer(child: RegionalRoads()),
                 IgnorePointer(
                   child: CustomPaint(painter: _RoutePainter(map.route)),
                 ),

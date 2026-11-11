@@ -1,16 +1,16 @@
 import 'package:flutter/painting.dart';
 
 enum WorldPlace {
-  cave(Offset(.21, .55)),
-  landing(Offset(.47, .73)),
-  pass(Offset(.77, .40));
+  cave(Offset(400 / 2400, 600 / 1400)),
+  landing(Offset(1295 / 2400, 885 / 1400)),
+  pass(Offset(2200 / 2400, 200 / 1400));
 
   const WorldPlace(this.position);
 
   final Offset position;
 }
 
-enum TrailTerrain { riverCrossing, mountainPath }
+enum TrailTerrain { riverCrossing, mountainPath, lowlandPath }
 
 class WorldTrail {
   const WorldTrail(
@@ -47,47 +47,40 @@ const regionalTrails = [
     WorldPlace.cave,
     WorldPlace.landing,
     2,
-    TrailTerrain.riverCrossing,
+    TrailTerrain.lowlandPath,
     [
-      Offset(.213, .566),
-      Offset(.223, .587),
-      Offset(.236, .607),
-      Offset(.265, .625),
-      Offset(.285, .652),
-      Offset(.325, .690),
-      Offset(.360, .713),
-      Offset(.400, .740),
-      Offset(.440, .751),
-      Offset(.457, .742),
+      Offset(358.56 / 2400, 619.68 / 1400),
+      Offset(338 / 2400, 646 / 1400),
+      Offset(350 / 2400, 696 / 1400),
+      Offset(440 / 2400, 830 / 1400),
+      Offset(600 / 2400, 1050 / 1400),
+      Offset(700 / 2400, 1200 / 1400),
+      Offset(1000 / 2400, 1100 / 1400),
+      Offset(1200 / 2400, 1150 / 1400),
+      Offset(1250 / 2400, 1000 / 1400),
+      Offset(1265.96 / 2400, 901.66 / 1400),
     ],
-    crossingPosition: Offset(.223, .587),
   ),
   WorldTrail(
     WorldPlace.landing,
     WorldPlace.pass,
     4,
-    TrailTerrain.mountainPath,
+    TrailTerrain.riverCrossing,
     [
-      Offset(.495, .741),
-      Offset(.520, .745),
-      Offset(.520, .717),
-      Offset(.520, .690),
-      Offset(.548, .676),
-      Offset(.565, .666),
-      Offset(.582, .645),
-      Offset(.595, .626),
-      Offset(.602, .595),
-      Offset(.620, .580),
-      Offset(.650, .557),
-      Offset(.677, .535),
-      Offset(.681, .507),
-      Offset(.675, .492),
-      Offset(.692, .477),
-      Offset(.719, .468),
-      Offset(.737, .451),
-      Offset(.744, .430),
-      Offset(.760, .416),
+      Offset(1265.96 / 2400, 901.66 / 1400),
+      Offset(1250 / 2400, 1000 / 1400),
+      Offset(1200 / 2400, 1150 / 1400),
+      Offset(1390 / 2400, 1050 / 1400),
+      Offset(1418 / 2400, 1050 / 1400),
+      Offset(1492 / 2400, 1050 / 1400),
+      Offset(1520 / 2400, 1050 / 1400),
+      Offset(1650 / 2400, 1000 / 1400),
+      Offset(1750 / 2400, 850 / 1400),
+      Offset(1900 / 2400, 700 / 1400),
+      Offset(2000 / 2400, 500 / 1400),
+      Offset(2096.575 / 2400, 350.15 / 1400),
     ],
+    crossingPosition: Offset(1455 / 2400, 1050 / 1400),
   ),
 ];
 

@@ -1,8 +1,32 @@
 [
   {
-    "path": "docs/design/regional-map.md",
+    "path": "lib/features/world/world_region.dart",
     "action": "modify",
-    "beforeSha256": "6248AC21C2B195147D82C43EB5F289A978F48D0A91C221CBC9BB4C2454E47B56",
-    "afterSha256": "73F3BEBA013FB4A9BC49D5CB2EDD2503509E168E96E3AFA70439408126C1FDBC"
+    "before": "afc985b3cfbfecb1a954390ce74a1205bbab9e60c86cef4b2dd42e96366d8dc5",
+    "after": "587cf768eac9f2c06ce2f83e357b66879df7b9cba14db0549ac8141af1fc5b5a"
+  },
+  {
+    "path": "lib/features/world/widgets/regional_map.dart",
+    "action": "modify",
+    "before": "992aa0763a3baed49856b43e29ef757253b94c239e149849f064a4e4ad5724f0",
+    "after": "f435c078bef044b4bcf155645b30422f5ee7c96400634628e08608475c89ec0a"
+  },
+  {
+    "path": "lib/features/world/controllers/world_controller.dart",
+    "action": "modify",
+    "before": "86a737036c8ccf6ca581d87a5f9d1ddacec759d4e1ca13c796d7d6c95d8ccbed",
+    "after": "6489bfd1aaf2a08defd08b10d5a9470f2bafdcc73d629248f125c60785e46560"
+  },
+  {
+    "path": "lib/l10n/game_strings.dart",
+    "action": "modify",
+    "before": "90b3aec64b25db3430dacd165c606753cb7dbc4e537092091c0be9c505af3b04",
+    "after": "2a18b57b9ef796d917fdb8cc588821636a91f818ff889803cf26ad4e83528359"
+  },
+  {
+    "path": "assets/images/map/regional_map.png",
+    "action": "modify",
+    "before": "af7a7703c7c64c635b56cabaf1e366f532522ce2cdb91ba6ee401bd0b1ac18a1",
+    "after": "884818ba0ef9f1a246781282edb4568af199bad420e952030d9057a3153b53ec"
   }
 ]

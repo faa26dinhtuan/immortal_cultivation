@@ -162,7 +162,10 @@ class WorldController extends ChangeNotifier {
       : 0;
 
   WorldTrail? get interruptedTrail => floodPending
-      ? route.firstWhere((trail) => trail.terrain == TrailTerrain.riverCrossing)
+      ? route.firstWhere(
+          (trail) => trail.terrain == TrailTerrain.riverCrossing,
+          orElse: () => route.first,
+        )
       : null;
 
   int get journeyElapsedHours => _journey?.elapsedHours ?? 0;
